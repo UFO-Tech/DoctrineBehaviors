@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Knp\DoctrineBehaviors\Tests\ORM\Blameable;
+namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Blameable;
 
 use Doctrine\Persistence\ObjectRepository;
 use Knp\DoctrineBehaviors\Contract\Provider\UserProviderInterface;

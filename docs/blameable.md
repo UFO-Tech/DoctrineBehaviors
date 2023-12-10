@@ -7,8 +7,6 @@ Blameable is able to **track entity creators and updaters**.
 ```php
 <?php
 
-declare(strict_types=1);
-
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;

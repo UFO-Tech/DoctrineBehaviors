@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 use Knp\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
 use Knp\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
 use Knp\DoctrineBehaviors\Tests\Provider\EntityUserProvider;

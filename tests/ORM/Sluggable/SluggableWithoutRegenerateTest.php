@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Knp\DoctrineBehaviors\Tests\ORM\Sluggable;
+namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Sluggable;
 
 use Doctrine\Persistence\ObjectRepository;
 use Knp\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;

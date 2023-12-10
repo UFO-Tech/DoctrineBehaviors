@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Knp\DoctrineBehaviors\Tests\Provider;
+namespace VasyaXY\DoctrineBehaviors\Tests\Provider;
 
 use Knp\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
 

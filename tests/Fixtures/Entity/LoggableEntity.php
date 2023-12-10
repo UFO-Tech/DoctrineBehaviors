@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Knp\DoctrineBehaviors\Tests\Fixtures\Entity;
+namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity;
 
 use DateTimeInterface;
 use Doctrine\ORM\Mapping\Column;

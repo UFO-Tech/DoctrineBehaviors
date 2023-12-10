@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Knp\DoctrineBehaviors\Tests\ORM;
+namespace VasyaXY\DoctrineBehaviors\Tests\ORM;
 
 use Iterator;
 use Knp\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;

@@ -18,7 +18,7 @@ This entity contains the fields you want to be translatable.
 ```php
 <?php
 
-declare(strict_types=1);    
+    
 
 namespace App\Entity;
 
@@ -66,9 +66,7 @@ this entity should only contain fields that you don't need to translate.
 
 ```php
 <?php
-
-
-declare(strict_types=1);    
+    
 
 namespace App\Entity;
 
@@ -95,15 +93,11 @@ class Category implements TranslatableInterface
     }
 }
 ```
-
-
 After updating the database, ie. with `bin/console doctrine:schema:update --force`,
 you can now work on translations using `translate()` or `getTranslations()` methods.
 
 ```php
 <?php
-
-declare(strict_types=1);
 
 /** @var \Knp\DoctrineBehaviors\Contract\Entity\TranslatableInterface $category */
 $category = new Category();
@@ -132,8 +126,6 @@ then put overrided traits in that folder.
 ```php
 <?php
 
-declare(strict_types=1);
-
 namespace AppBundle\Behavior;
 
 use Knp\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
@@ -154,8 +146,6 @@ trait TranslatableTrait
 
 ```php
 <?php
-
-declare(strict_types=1);
 
 namespace AppBundle\Behavior;
 

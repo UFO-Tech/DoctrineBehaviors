@@ -64,8 +64,6 @@ Now we can implement an Event Subscriber to listen to the accept-language header
 ```php
 <?php
 
-declare(strict_types=1);
-
 namespace App\Event\Subscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;

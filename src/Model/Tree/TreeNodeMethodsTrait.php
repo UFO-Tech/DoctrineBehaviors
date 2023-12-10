@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Knp\DoctrineBehaviors\Model\Tree;
+namespace VasyaXY\DoctrineBehaviors\Model\Tree;
 
 use Closure;
 use Doctrine\Common\Collections\ArrayCollection;

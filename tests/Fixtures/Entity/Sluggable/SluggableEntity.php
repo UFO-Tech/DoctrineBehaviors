@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Knp\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable;
+namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable;
 
 use DateTime;
 use DateTimeInterface;

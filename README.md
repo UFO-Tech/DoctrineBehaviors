@@ -1,7 +1,5 @@
 # Doctrine Behaviors
 
-[![Downloads](https://img.shields.io/packagist/dt/knplabs/doctrine-behaviors.svg?style=flat-square)](https://packagist.org/packages/knplabs/doctrine-behaviors)
-
 This PHP library is a collection of traits and interfaces that add behaviors to Doctrine entities and repositories.
 
 It currently handles:
@@ -18,7 +16,7 @@ It currently handles:
 ## Install
 
 ```bash
-composer require knplabs/doctrine-behaviors
+composer require vasyaxy/doctrine-behaviors
 ```
 
 ## Usage
@@ -32,8 +30,6 @@ For some behaviors like tree, you can use repository traits:
 
 ```php
 <?php
-
-declare(strict_types=1);
 
 namespace App\Repository;
 
@@ -61,7 +57,7 @@ Include `phpstan-extension.neon` in your project's PHPStan config:
 ```yaml
 # phpstan.neon
 includes:
-    - vendor/knplabs/doctrine-behaviors/phpstan-extension.neon
+    - vendor/vasyaxy/doctrine-behaviors/phpstan-extension.neon
 ```
 
 ## 3 Steps to Contribute
@@ -75,36 +71,3 @@ includes:
     composer fix-cs
     composer phpstan
     ```
-
-## Upgrade 1.x to 2
-
-There have been many changes between 1 and 2, but don't worry.
-This package uses [Rector](https://github.com/rectorphp/rector), that handles upgrade for you.
-
-```bash
-composer require rector/rector --dev
-```
-
-Create `rector.php` config:
-
-```bash
-vendor/bin/rector init
-```
-
-Add Doctrine Behaviors upgrade set to `rector.php`:
-
-```php
-use Rector\Core\Configuration\Option;
-use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use Rector\Doctrine\Set\DoctrineSetList;
-
-return static function (ContainerConfigurator $containerConfigurator): void {
-    $containerConfigurator->import(DoctrineSetList::DOCTRINE_BEHAVIORS_20);
-};
-```
-
-Run Rector:
-
-```bash
-vendor/bin/rector process src
-```

@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 use Knp\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
 use Knp\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
 use Knp\DoctrineBehaviors\EventSubscriber\LoggableEventSubscriber;

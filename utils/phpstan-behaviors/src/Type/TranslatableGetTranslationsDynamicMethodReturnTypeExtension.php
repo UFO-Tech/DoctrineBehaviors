@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Knp\DoctrineBehaviors\PHPStan\Type;
+namespace VasyaXY\DoctrineBehaviors\PHPStan\Type;
 
 use Doctrine\Common\Collections\Collection;
 use Knp\DoctrineBehaviors\Contract\Entity\TranslatableInterface;

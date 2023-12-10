@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Knp\DoctrineBehaviors\Tests\Fixtures\Entity\Translation;
+namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Translation;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
