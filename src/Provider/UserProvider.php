@@ -3,7 +3,7 @@
 namespace VasyaXY\DoctrineBehaviors\Provider;
 
 use VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
-use Symfony\Component\Security\Core\Security;
+use Symfony\Bundle\SecurityBundle\Security;
 
 final class UserProvider implements UserProviderInterface
 {
