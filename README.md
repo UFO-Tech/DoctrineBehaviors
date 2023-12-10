@@ -1,5 +1,7 @@
 # Doctrine Behaviors
 
+This is fork for symfony 7 from knplabs/doctrine-behaviors
+
 This PHP library is a collection of traits and interfaces that add behaviors to Doctrine entities and repositories.
 
 It currently handles:
