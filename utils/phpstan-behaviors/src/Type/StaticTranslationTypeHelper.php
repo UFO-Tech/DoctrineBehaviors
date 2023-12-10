@@ -2,9 +2,9 @@
 
 namespace VasyaXY\DoctrineBehaviors\PHPStan\Type;
 
-use Knp\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use Knp\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use Knp\DoctrineBehaviors\PHPStan\Exception\PHPStanTypeException;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use VasyaXY\DoctrineBehaviors\PHPStan\Exception\PHPStanTypeException;
 use PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ReflectionProvider;

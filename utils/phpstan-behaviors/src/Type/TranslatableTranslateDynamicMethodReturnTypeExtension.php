@@ -2,7 +2,7 @@
 
 namespace VasyaXY\DoctrineBehaviors\PHPStan\Type;
 
-use Knp\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
 use PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\MethodReflection;

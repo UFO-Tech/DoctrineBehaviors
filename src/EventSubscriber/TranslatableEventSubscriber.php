@@ -8,9 +8,9 @@ use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
 use Doctrine\ORM\Mapping\ClassMetadataInfo;
 use Doctrine\Persistence\ObjectManager;
-use Knp\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use Knp\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use Knp\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
 use ReflectionClass;
 
 final class TranslatableEventSubscriber implements EventSubscriberInterface

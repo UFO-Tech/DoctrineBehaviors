@@ -2,7 +2,7 @@
 
 namespace VasyaXY\DoctrineBehaviors\Provider;
 
-use Knp\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
 use Symfony\Component\Security\Core\Security;
 
 final class UserProvider implements UserProviderInterface

@@ -3,7 +3,7 @@
 namespace VasyaXY\DoctrineBehaviors\Model\Tree;
 
 use Doctrine\Common\Collections\Collection;
-use Knp\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
 
 trait TreeNodePropertiesTrait
 {

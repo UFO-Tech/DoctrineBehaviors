@@ -48,13 +48,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Knp\\DoctrineBehaviors\\": "src",
-            "Knp\\DoctrineBehaviors\\PHPStan\\": "utils/phpstan-behaviors/src"
+            "VasyaXY\\DoctrineBehaviors\\": "src",
+            "VasyaXY\\DoctrineBehaviors\\PHPStan\\": "utils/phpstan-behaviors/src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Knp\\DoctrineBehaviors\\Tests\\": "tests"
+            "VasyaXY\\DoctrineBehaviors\\Tests\\": "tests"
         }
     },
     "scripts": {

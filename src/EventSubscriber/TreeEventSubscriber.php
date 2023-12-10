@@ -5,7 +5,7 @@ namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
-use Knp\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
 
 final class TreeEventSubscriber implements EventSubscriberInterface
 {

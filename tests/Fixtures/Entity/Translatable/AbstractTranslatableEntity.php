@@ -3,8 +3,8 @@
 namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable;
 
 use Doctrine\ORM\Mapping\MappedSuperclass;
-use Knp\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use Knp\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use VasyaXY\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
 
 #[MappedSuperclass]
 abstract class AbstractTranslatableEntity implements TranslatableInterface

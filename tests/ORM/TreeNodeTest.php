@@ -3,11 +3,11 @@
 namespace VasyaXY\DoctrineBehaviors\Tests\ORM;
 
 use Iterator;
-use Knp\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
-use Knp\DoctrineBehaviors\Exception\TreeException;
-use Knp\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Knp\DoctrineBehaviors\Tests\Fixtures\Entity\TreeNodeEntity;
-use Knp\DoctrineBehaviors\Tests\Fixtures\Repository\TreeNodeRepository;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use VasyaXY\DoctrineBehaviors\Exception\TreeException;
+use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\TreeNodeEntity;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Repository\TreeNodeRepository;
 use Nette\Utils\Json;
 
 final class TreeNodeTest extends AbstractBehaviorTestCase

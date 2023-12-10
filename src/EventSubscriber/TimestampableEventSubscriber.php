@@ -5,7 +5,7 @@ namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
-use Knp\DoctrineBehaviors\Contract\Entity\TimestampableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TimestampableInterface;
 
 final class TimestampableEventSubscriber implements EventSubscriberInterface
 {

@@ -2,7 +2,7 @@
 
 namespace VasyaXY\DoctrineBehaviors\Model\Translatable;
 
-use Knp\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
 use Nette\Utils\Strings;
 
 trait TranslationMethodsTrait

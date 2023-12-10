@@ -8,8 +8,8 @@ use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
 use Doctrine\ORM\Mapping\ClassMetadataInfo;
-use Knp\DoctrineBehaviors\Contract\Entity\SluggableInterface;
-use Knp\DoctrineBehaviors\Repository\DefaultSluggableRepository;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\SluggableInterface;
+use VasyaXY\DoctrineBehaviors\Repository\DefaultSluggableRepository;
 
 final class SluggableEventSubscriber implements EventSubscriberInterface
 {

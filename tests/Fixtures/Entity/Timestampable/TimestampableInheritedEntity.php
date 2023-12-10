@@ -4,8 +4,8 @@ namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
-use Knp\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use Knp\DoctrineBehaviors\Tests\Fixtures\Entity\AbstractTimestampableMappedSuperclassEntity;
+use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\AbstractTimestampableMappedSuperclassEntity;
 
 #[Entity]
 class TimestampableInheritedEntity extends AbstractTimestampableMappedSuperclassEntity

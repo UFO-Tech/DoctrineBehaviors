@@ -5,9 +5,9 @@ namespace VasyaXY\DoctrineBehaviors\Model\Tree;
 use Closure;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-use Knp\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
-use Knp\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use Knp\DoctrineBehaviors\Exception\TreeException;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use VasyaXY\DoctrineBehaviors\Exception\TreeException;
 use Nette\Utils\Json;
 
 trait TreeNodeMethodsTrait

@@ -3,9 +3,9 @@
 namespace VasyaXY\DoctrineBehaviors\Tests\Provider;
 
 use Doctrine\ORM\EntityManagerInterface;
-use Knp\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
-use Knp\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use Knp\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
+use VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
 
 final class EntityUserProvider implements UserProviderInterface
 {

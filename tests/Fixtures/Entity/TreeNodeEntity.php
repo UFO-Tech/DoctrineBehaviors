@@ -7,9 +7,9 @@ use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use Knp\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
-use Knp\DoctrineBehaviors\Model\Tree\TreeNodeTrait;
-use Knp\DoctrineBehaviors\Tests\Fixtures\Repository\TreeNodeRepository;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use VasyaXY\DoctrineBehaviors\Model\Tree\TreeNodeTrait;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Repository\TreeNodeRepository;
 use Stringable;
 
 #[Entity(repositoryClass: TreeNodeRepository::class)]

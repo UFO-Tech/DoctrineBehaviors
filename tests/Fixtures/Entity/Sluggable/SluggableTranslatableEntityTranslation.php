@@ -6,10 +6,10 @@ use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use Knp\DoctrineBehaviors\Contract\Entity\SluggableInterface;
-use Knp\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use Knp\DoctrineBehaviors\Model\Sluggable\SluggableTrait;
-use Knp\DoctrineBehaviors\Model\Translatable\TranslationTrait;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\SluggableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use VasyaXY\DoctrineBehaviors\Model\Sluggable\SluggableTrait;
+use VasyaXY\DoctrineBehaviors\Model\Translatable\TranslationTrait;
 
 #[Entity]
 class SluggableTranslatableEntityTranslation implements TranslationInterface, SluggableInterface

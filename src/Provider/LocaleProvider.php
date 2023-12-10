@@ -2,7 +2,7 @@
 
 namespace VasyaXY\DoctrineBehaviors\Provider;
 
-use Knp\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
 use Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
 use Symfony\Component\DependencyInjection\Exception\ParameterNotFoundException;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;

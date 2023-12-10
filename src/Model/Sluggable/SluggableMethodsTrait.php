@@ -2,7 +2,7 @@
 
 namespace VasyaXY\DoctrineBehaviors\Model\Sluggable;
 
-use Knp\DoctrineBehaviors\Exception\SluggableException;
+use VasyaXY\DoctrineBehaviors\Exception\SluggableException;
 use Symfony\Component\String\Slugger\AsciiSlugger;
 
 trait SluggableMethodsTrait

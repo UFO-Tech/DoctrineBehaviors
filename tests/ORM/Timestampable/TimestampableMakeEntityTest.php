@@ -5,8 +5,8 @@ namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Timestampable;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
 use Doctrine\ORM\Mapping\ClassMetadata;
-use Knp\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Knp\DoctrineBehaviors\Tests\ORM\Timestampable\Source\SomeClassForMetadata;
+use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use VasyaXY\DoctrineBehaviors\Tests\ORM\Timestampable\Source\SomeClassForMetadata;
 
 /**
  * When console make:entity creates a new class, the event arguments are not fully populated

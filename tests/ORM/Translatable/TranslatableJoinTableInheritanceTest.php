@@ -3,8 +3,8 @@
 namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Translatable;
 
 use Doctrine\Persistence\ObjectRepository;
-use Knp\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Knp\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable\ExtendedTranslatableEntityWithJoinTableInheritance;
+use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable\ExtendedTranslatableEntityWithJoinTableInheritance;
 
 final class TranslatableJoinTableInheritanceTest extends AbstractBehaviorTestCase
 {

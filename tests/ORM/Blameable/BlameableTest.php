@@ -3,11 +3,11 @@
 namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Blameable;
 
 use Doctrine\Persistence\ObjectRepository;
-use Knp\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
-use Knp\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Knp\DoctrineBehaviors\Tests\Fixtures\Entity\Blameable\BlameableEntity;
-use Knp\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
-use Knp\DoctrineBehaviors\Tests\Provider\EntityUserProvider;
+use VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Blameable\BlameableEntity;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
+use VasyaXY\DoctrineBehaviors\Tests\Provider\EntityUserProvider;
 
 final class BlameableTest extends AbstractBehaviorTestCase
 {

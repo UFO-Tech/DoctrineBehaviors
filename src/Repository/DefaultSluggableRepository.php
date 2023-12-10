@@ -3,7 +3,7 @@
 namespace VasyaXY\DoctrineBehaviors\Repository;
 
 use Doctrine\ORM\EntityManagerInterface;
-use Knp\DoctrineBehaviors\Contract\Entity\SluggableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\SluggableInterface;
 
 final class DefaultSluggableRepository
 {

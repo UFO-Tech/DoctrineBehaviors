@@ -9,8 +9,8 @@ use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
 use Doctrine\ORM\Mapping\ClassMetadataInfo;
 use Doctrine\ORM\UnitOfWork;
-use Knp\DoctrineBehaviors\Contract\Entity\BlameableInterface;
-use Knp\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\BlameableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
 
 final class BlameableEventSubscriber implements EventSubscriberInterface
 {

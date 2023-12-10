@@ -3,8 +3,8 @@
 namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Timestampable;
 
 use DateTime;
-use Knp\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Knp\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable\TimestampableInheritedEntity;
+use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable\TimestampableInheritedEntity;
 
 final class TimestampableWithInheritanceTest extends AbstractBehaviorTestCase
 {

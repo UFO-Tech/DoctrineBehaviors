@@ -4,8 +4,8 @@ namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Sluggable;
 
 use DateTime;
 use Doctrine\Persistence\ObjectRepository;
-use Knp\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Knp\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable\SluggableMultiEntity;
+use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable\SluggableMultiEntity;
 
 final class SluggableMultiTest extends AbstractBehaviorTestCase
 {

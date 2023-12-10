@@ -4,8 +4,8 @@ namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Timestampable;
 
 use Datetime;
 use Doctrine\Persistence\ObjectRepository;
-use Knp\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Knp\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable\TimestampableEntity;
+use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable\TimestampableEntity;
 
 final class TimestampableTest extends AbstractBehaviorTestCase
 {

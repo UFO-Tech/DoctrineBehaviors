@@ -2,7 +2,7 @@
 
 namespace VasyaXY\DoctrineBehaviors\Model\Uuidable;
 
-use Knp\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
 use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\UuidInterface;
 

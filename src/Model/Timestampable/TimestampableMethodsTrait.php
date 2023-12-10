@@ -5,7 +5,7 @@ namespace VasyaXY\DoctrineBehaviors\Model\Timestampable;
 use DateTime;
 use DateTimeInterface;
 use DateTimeZone;
-use Knp\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
 
 trait TimestampableMethodsTrait
 {

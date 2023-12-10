@@ -8,8 +8,8 @@ Please note: you don't have a `title` property in this entity, however it has a 
 the `TranslatableMethodsTrait` you can do this for all the translatable properties.
 
 ```php
-use Knp\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use Knp\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use VasyaXY\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
 
 class Document implements TranslatableInterface
 {
@@ -31,8 +31,8 @@ use TranslatableTrait;
 Then in the DocumentTranslation entity:
 
 ```php
-use Knp\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use Knp\DoctrineBehaviors\Model\Translatable\TranslationTrait;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use VasyaXY\DoctrineBehaviors\Model\Translatable\TranslationTrait;
 
 #[ORM\Entity]
 class DocumentTranslation implements TranslationInterface

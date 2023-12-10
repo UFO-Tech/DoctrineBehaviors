@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use Knp\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
+use VasyaXY\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
 
 #[Entity]
 class TranslatableEntityWithCustomInterface implements ExtendedTranslatableInterface

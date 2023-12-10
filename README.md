@@ -34,7 +34,7 @@ For some behaviors like tree, you can use repository traits:
 namespace App\Repository;
 
 use Doctrine\ORM\EntityRepository;
-use Knp\DoctrineBehaviors\ORM\Tree\TreeTrait;
+use VasyaXY\DoctrineBehaviors\ORM\Tree\TreeTrait;
 
 final class CategoryRepository extends EntityRepository
 {

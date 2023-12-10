@@ -21,7 +21,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->bind('$blameableUserEntity', '%doctrine_behaviors_blameable_user_entity%')
         ->bind('$timestampableDateFieldType', '%doctrine_behaviors_timestampable_date_field_type%');
 
-    $services->load('Knp\DoctrineBehaviors\\', __DIR__ . '/../src')
+    $services->load('VasyaXY\DoctrineBehaviors\\', __DIR__ . '/../src')
         ->exclude([
             __DIR__ . '/../src/Bundle',
             __DIR__ . '/../src/DoctrineBehaviorsBundle.php',

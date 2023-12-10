@@ -6,7 +6,7 @@ use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
-use Knp\DoctrineBehaviors\Contract\Entity\UuidableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\UuidableInterface;
 
 final class UuidableEventSubscriber implements EventSubscriberInterface
 {

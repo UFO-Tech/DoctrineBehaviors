@@ -7,8 +7,8 @@ use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use Knp\DoctrineBehaviors\Contract\Entity\LoggableInterface;
-use Knp\DoctrineBehaviors\Model\Loggable\LoggableTrait;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\LoggableInterface;
+use VasyaXY\DoctrineBehaviors\Model\Loggable\LoggableTrait;
 
 #[Entity]
 class LoggableEntity implements LoggableInterface

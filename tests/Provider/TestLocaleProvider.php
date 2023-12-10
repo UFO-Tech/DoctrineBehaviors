@@ -2,7 +2,7 @@
 
 namespace VasyaXY\DoctrineBehaviors\Tests\Provider;
 
-use Knp\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
 
 final class TestLocaleProvider implements LocaleProviderInterface
 {

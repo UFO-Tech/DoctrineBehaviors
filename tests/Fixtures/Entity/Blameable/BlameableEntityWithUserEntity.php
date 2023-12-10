@@ -6,9 +6,9 @@ use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use Knp\DoctrineBehaviors\Contract\Entity\BlameableInterface;
-use Knp\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use Knp\DoctrineBehaviors\Model\Blameable\BlameableTrait;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\BlameableInterface;
+use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use VasyaXY\DoctrineBehaviors\Model\Blameable\BlameableTrait;
 
 #[Entity]
 class BlameableEntityWithUserEntity implements BlameableInterface
