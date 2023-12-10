@@ -2,6 +2,7 @@
 
 namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
 
+use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Events;
@@ -9,7 +10,10 @@ use VasyaXY\DoctrineBehaviors\Contract\Entity\LoggableInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 
-final class LoggableEventSubscriber implements EventSubscriberInterface
+#[AsDoctrineListener(event: Events::postPersist, priority: 500, connection: 'default')]
+#[AsDoctrineListener(event: Events::postUpdate, priority: 500, connection: 'default')]
+#[AsDoctrineListener(event: Events::preRemove, priority: 500, connection: 'default')]
+final class LoggableEventSubscriber // implements EventSubscriberInterface
 {
     public function __construct(
         private LoggerInterface $logger
@@ -18,7 +22,7 @@ final class LoggableEventSubscriber implements EventSubscriberInterface
 
     public function postPersist(LifecycleEventArgs $lifecycleEventArgs): void
     {
-        $entity = $lifecycleEventArgs->getEntity();
+        $entity = $lifecycleEventArgs->getObject();
         if (! $entity instanceof LoggableInterface) {
             return;
         }
@@ -31,7 +35,7 @@ final class LoggableEventSubscriber implements EventSubscriberInterface
 
     public function postUpdate(LifecycleEventArgs $lifecycleEventArgs): void
     {
-        $entity = $lifecycleEventArgs->getEntity();
+        $entity = $lifecycleEventArgs->getObject();
         if (! $entity instanceof LoggableInterface) {
             return;
         }
@@ -41,7 +45,7 @@ final class LoggableEventSubscriber implements EventSubscriberInterface
 
     public function preRemove(LifecycleEventArgs $lifecycleEventArgs): void
     {
-        $entity = $lifecycleEventArgs->getEntity();
+        $entity = $lifecycleEventArgs->getObject();
 
         if ($entity instanceof LoggableInterface) {
             $this->logger->log(LogLevel::INFO, $entity->getRemoveLogMessage());
@@ -61,9 +65,9 @@ final class LoggableEventSubscriber implements EventSubscriberInterface
      */
     private function logChangeSet(LifecycleEventArgs $lifecycleEventArgs): void
     {
-        $entityManager = $lifecycleEventArgs->getEntityManager();
+        $entityManager = $lifecycleEventArgs->getObjectManager();
         $unitOfWork = $entityManager->getUnitOfWork();
-        $entity = $lifecycleEventArgs->getEntity();
+        $entity = $lifecycleEventArgs->getObject();
 
         $entityClass = $entity::class;
         $classMetadata = $entityManager->getClassMetadata($entityClass);

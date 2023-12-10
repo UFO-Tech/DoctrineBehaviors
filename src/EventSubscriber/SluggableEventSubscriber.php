@@ -2,6 +2,7 @@
 
 namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
 
+use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Event\LifecycleEventArgs;
@@ -11,7 +12,10 @@ use Doctrine\ORM\Mapping\ClassMetadataInfo;
 use VasyaXY\DoctrineBehaviors\Contract\Entity\SluggableInterface;
 use VasyaXY\DoctrineBehaviors\Repository\DefaultSluggableRepository;
 
-final class SluggableEventSubscriber implements EventSubscriberInterface
+#[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]
+#[AsDoctrineListener(event: Events::prePersist, priority: 500, connection: 'default')]
+#[AsDoctrineListener(event: Events::preUpdate, priority: 500, connection: 'default')]
+final class SluggableEventSubscriber // implements EventSubscriberInterface
 {
     /**
      * @var string
@@ -67,7 +71,7 @@ final class SluggableEventSubscriber implements EventSubscriberInterface
 
     private function processLifecycleEventArgs(LifecycleEventArgs $lifecycleEventArgs): void
     {
-        $entity = $lifecycleEventArgs->getEntity();
+        $entity = $lifecycleEventArgs->getObject();
         if (! $entity instanceof SluggableInterface) {
             return;
         }

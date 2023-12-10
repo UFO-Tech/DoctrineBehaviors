@@ -2,12 +2,14 @@
 
 namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
 
+use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
 use VasyaXY\DoctrineBehaviors\Contract\Entity\TimestampableInterface;
 
-final class TimestampableEventSubscriber implements EventSubscriberInterface
+#[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]
+final class TimestampableEventSubscriber // implements EventSubscriberInterface
 {
     public function __construct(
         private string $timestampableDateFieldType

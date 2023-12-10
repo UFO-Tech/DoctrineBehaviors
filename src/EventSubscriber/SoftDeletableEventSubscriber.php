@@ -2,13 +2,16 @@
 
 namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
 
+use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Event\OnFlushEventArgs;
 use Doctrine\ORM\Events;
 use VasyaXY\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
 
-final class SoftDeletableEventSubscriber implements EventSubscriberInterface
+#[AsDoctrineListener(event: Events::onFlush, priority: 500, connection: 'default')]
+#[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]
+final class SoftDeletableEventSubscriber // implements EventSubscriberInterface
 {
     /**
      * @var string
@@ -17,7 +20,7 @@ final class SoftDeletableEventSubscriber implements EventSubscriberInterface
 
     public function onFlush(OnFlushEventArgs $onFlushEventArgs): void
     {
-        $entityManager = $onFlushEventArgs->getEntityManager();
+        $entityManager = $onFlushEventArgs->getObjectManager();
         $unitOfWork = $entityManager->getUnitOfWork();
 
         foreach ($unitOfWork->getScheduledEntityDeletions() as $entity) {

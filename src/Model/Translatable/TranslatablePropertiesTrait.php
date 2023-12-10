@@ -2,7 +2,7 @@
 
 namespace VasyaXY\DoctrineBehaviors\Model\Translatable;
 
-use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
 use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
 
 trait TranslatablePropertiesTrait
@@ -10,23 +10,23 @@ trait TranslatablePropertiesTrait
     /**
      * @var Collection<string, TranslationInterface>
      */
-    protected $translations;
+    protected $translations = null;
 
     /**
      * @see mergeNewTranslations
      * @var Collection<string, TranslationInterface>
      */
-    protected $newTranslations;
+    protected $newTranslations = null;
 
     /**
      * currentLocale is a non persisted field configured during postLoad event
      *
      * @var string|null
      */
-    protected $currentLocale;
+    protected ?string $currentLocale = null;
 
     /**
      * @var string
      */
-    protected $defaultLocale = 'en';
+    protected string $defaultLocale = 'en';
 }

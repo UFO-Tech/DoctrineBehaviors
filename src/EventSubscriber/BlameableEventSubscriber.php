@@ -2,6 +2,7 @@
 
 namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
 
+use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Event\LifecycleEventArgs;
@@ -12,7 +13,11 @@ use Doctrine\ORM\UnitOfWork;
 use VasyaXY\DoctrineBehaviors\Contract\Entity\BlameableInterface;
 use VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
 
-final class BlameableEventSubscriber implements EventSubscriberInterface
+#[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]
+#[AsDoctrineListener(event: Events::prePersist, priority: 500, connection: 'default')]
+#[AsDoctrineListener(event: Events::preUpdate, priority: 500, connection: 'default')]
+#[AsDoctrineListener(event: Events::preRemove, priority: 500, connection: 'default')]
+final class BlameableEventSubscriber // implements EventSubscriberInterface
 {
     /**
      * @var string
@@ -59,7 +64,7 @@ final class BlameableEventSubscriber implements EventSubscriberInterface
      */
     public function prePersist(LifecycleEventArgs $lifecycleEventArgs): void
     {
-        $entity = $lifecycleEventArgs->getEntity();
+        $entity = $lifecycleEventArgs->getObject();
         if (! $entity instanceof BlameableInterface) {
             return;
         }
@@ -90,7 +95,7 @@ final class BlameableEventSubscriber implements EventSubscriberInterface
      */
     public function preUpdate(LifecycleEventArgs $lifecycleEventArgs): void
     {
-        $entity = $lifecycleEventArgs->getEntity();
+        $entity = $lifecycleEventArgs->getObject();
         if (! $entity instanceof BlameableInterface) {
             return;
         }
@@ -112,7 +117,7 @@ final class BlameableEventSubscriber implements EventSubscriberInterface
      */
     public function preRemove(LifecycleEventArgs $lifecycleEventArgs): void
     {
-        $entity = $lifecycleEventArgs->getEntity();
+        $entity = $lifecycleEventArgs->getObject();
         if (! $entity instanceof BlameableInterface) {
             return;
         }

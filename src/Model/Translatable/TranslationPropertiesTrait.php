@@ -9,12 +9,12 @@ trait TranslationPropertiesTrait
     /**
      * @var string
      */
-    protected $locale;
+    protected ?string $locale = null;
 
     /**
      * Will be mapped to translatable entity by TranslatableSubscriber
      *
      * @var TranslatableInterface
      */
-    protected $translatable;
+    protected ?TranslatableInterface $translatable = null;
 }
