@@ -1,10 +1,10 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\PHPStan\Type;
+namespace Miets\DoctrineBehaviors\PHPStan\Type;
 
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use VasyaXY\DoctrineBehaviors\PHPStan\Exception\PHPStanTypeException;
+use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Miets\DoctrineBehaviors\PHPStan\Exception\PHPStanTypeException;
 use PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ReflectionProvider;

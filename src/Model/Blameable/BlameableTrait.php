@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Model\Blameable;
+namespace Miets\DoctrineBehaviors\Model\Blameable;
 
 trait BlameableTrait
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Sluggable;
+namespace Miets\DoctrineBehaviors\Tests\ORM\Sluggable;
 
 use Doctrine\Persistence\ObjectRepository;
-use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable\SluggableEntity;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable\SluggableWithoutRegenerateEntity;
+use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable\SluggableEntity;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable\SluggableWithoutRegenerateEntity;
 
 final class SluggableWithoutRegenerateTest extends AbstractBehaviorTestCase
 {

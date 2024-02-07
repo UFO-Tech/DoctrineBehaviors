@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Model\Uuidable;
+namespace Miets\DoctrineBehaviors\Model\Uuidable;
 
 trait UuidableTrait
 {

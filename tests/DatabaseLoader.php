@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests;
+namespace Miets\DoctrineBehaviors\Tests;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\ORM\EntityManagerInterface;

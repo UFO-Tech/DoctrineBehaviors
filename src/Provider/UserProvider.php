@@ -1,8 +1,8 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Provider;
+namespace Miets\DoctrineBehaviors\Provider;
 
-use VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use Miets\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
 use Symfony\Bundle\SecurityBundle\Security;
 
 final class UserProvider implements UserProviderInterface

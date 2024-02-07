@@ -1,12 +1,12 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Blameable;
+namespace Miets\DoctrineBehaviors\Tests\ORM\Blameable;
 
 use Doctrine\Persistence\ObjectRepository;
-use VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
-use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Blameable\BlameableEntityWithUserEntity;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
+use Miets\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Blameable\BlameableEntityWithUserEntity;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
 
 final class BlameableWithEntityTest extends AbstractBehaviorTestCase
 {

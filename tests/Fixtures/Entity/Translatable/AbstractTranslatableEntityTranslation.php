@@ -1,12 +1,12 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable;
+namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\MappedSuperclass;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use VasyaXY\DoctrineBehaviors\Model\Translatable\TranslationTrait;
+use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Miets\DoctrineBehaviors\Model\Translatable\TranslationTrait;
 
 #[MappedSuperclass]
 abstract class AbstractTranslatableEntityTranslation implements TranslationInterface

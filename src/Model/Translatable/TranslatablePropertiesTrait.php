@@ -1,9 +1,9 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Model\Translatable;
+namespace Miets\DoctrineBehaviors\Model\Translatable;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
 
 trait TranslatablePropertiesTrait
 {

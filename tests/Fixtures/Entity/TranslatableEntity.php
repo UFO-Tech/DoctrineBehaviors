@@ -1,13 +1,13 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity;
+namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use VasyaXY\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
+use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use Miets\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
 
 /**
  * @method string|null getTitle()

@@ -1,10 +1,10 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\ORM\Tree;
+namespace Miets\DoctrineBehaviors\ORM\Tree;
 
 use ArrayAccess;
 use Doctrine\ORM\QueryBuilder;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use Miets\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
 
 trait TreeTrait
 {

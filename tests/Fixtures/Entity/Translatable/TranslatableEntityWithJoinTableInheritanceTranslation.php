@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable;
+namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\DiscriminatorColumn;
@@ -8,9 +8,9 @@ use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
 use Doctrine\ORM\Mapping\InheritanceType;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use VasyaXY\DoctrineBehaviors\Model\Translatable\TranslationTrait;
+use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Miets\DoctrineBehaviors\Model\Translatable\TranslationTrait;
 
 #[Entity]
 #[InheritanceType(value: 'JOINED')]

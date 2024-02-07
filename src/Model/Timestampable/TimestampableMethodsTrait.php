@@ -1,11 +1,11 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Model\Timestampable;
+namespace Miets\DoctrineBehaviors\Model\Timestampable;
 
 use DateTime;
 use DateTimeInterface;
 use DateTimeZone;
-use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
 
 trait TimestampableMethodsTrait
 {

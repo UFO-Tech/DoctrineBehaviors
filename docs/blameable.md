@@ -10,8 +10,8 @@ Blameable is able to **track entity creators and updaters**.
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\BlameableInterface;
-use VasyaXY\DoctrineBehaviors\Model\Blameable\BlameableTrait;
+use Miets\DoctrineBehaviors\Contract\Entity\BlameableInterface;
+use Miets\DoctrineBehaviors\Model\Blameable\BlameableTrait;
 
 /**
  * @ORM\Entity
@@ -25,7 +25,7 @@ class Category implements BlameableInterface
 ## How it Works
 
 By default, the current user from Symfony\Security is used.
-If you want to change it, just implement `VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface` yourself and override native service.
+If you want to change it, just implement `Miets\DoctrineBehaviors\Contract\Provider\UserProviderInterface` yourself and override native service.
 
 ## Usage
 
@@ -34,7 +34,7 @@ Then, you can use it like that:
 ```php
 <?php
 
-/** @var VasyaXY\DoctrineBehaviors\Contract\Entity\BlameableInterface $category */
+/** @var Miets\DoctrineBehaviors\Contract\Entity\BlameableInterface $category */
 $category = new Category();
 $entityManager->persist($category);
 

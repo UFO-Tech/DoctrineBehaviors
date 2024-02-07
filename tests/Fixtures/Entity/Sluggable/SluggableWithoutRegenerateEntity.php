@@ -1,14 +1,14 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable;
+namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\SluggableInterface;
-use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use VasyaXY\DoctrineBehaviors\Model\Sluggable\SluggableTrait;
+use Miets\DoctrineBehaviors\Contract\Entity\SluggableInterface;
+use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Miets\DoctrineBehaviors\Model\Sluggable\SluggableTrait;
 
 #[Entity]
 class SluggableWithoutRegenerateEntity implements SluggableInterface

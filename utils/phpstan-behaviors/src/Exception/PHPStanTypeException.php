@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\PHPStan\Exception;
+namespace Miets\DoctrineBehaviors\PHPStan\Exception;
 
 use Exception;
 

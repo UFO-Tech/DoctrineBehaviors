@@ -1,11 +1,11 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Provider;
+namespace Miets\DoctrineBehaviors\Tests\Provider;
 
 use Doctrine\ORM\EntityManagerInterface;
-use VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
-use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
+use Miets\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
 
 final class EntityUserProvider implements UserProviderInterface
 {

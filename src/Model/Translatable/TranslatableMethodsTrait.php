@@ -1,11 +1,11 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Model\Translatable;
+namespace Miets\DoctrineBehaviors\Model\Translatable;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use VasyaXY\DoctrineBehaviors\Exception\TranslatableException;
+use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Miets\DoctrineBehaviors\Exception\TranslatableException;
 
 trait TranslatableMethodsTrait
 {

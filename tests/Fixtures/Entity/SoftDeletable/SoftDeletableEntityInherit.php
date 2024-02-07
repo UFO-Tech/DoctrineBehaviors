@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\SoftDeletable;
+namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity\SoftDeletable;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;

@@ -1,13 +1,13 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Model\Tree;
+namespace Miets\DoctrineBehaviors\Model\Tree;
 
 use Closure;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
-use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use VasyaXY\DoctrineBehaviors\Exception\TreeException;
+use Miets\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Miets\DoctrineBehaviors\Exception\TreeException;
 use Nette\Utils\Json;
 
 trait TreeNodeMethodsTrait

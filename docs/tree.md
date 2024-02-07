@@ -8,8 +8,8 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
-use VasyaXY\DoctrineBehaviors\Model\Tree\TreeNodeTrait;
+use Miets\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use Miets\DoctrineBehaviors\Model\Tree\TreeNodeTrait;
 
 /**
  * @ORM\Entity
@@ -36,7 +36,7 @@ class Category implements TreeNodeInterface
 ```php
 <?php
 
-/** @var VasyaXY\DoctrineBehaviors\Contract\Entity\TreeNodeInterface $category */
+/** @var Miets\DoctrineBehaviors\Contract\Entity\TreeNodeInterface $category */
 $category = new Category();
 $category->setId(1);
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Provider;
+namespace Miets\DoctrineBehaviors\Tests\Provider;
 
-use VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use Miets\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
 
 final class TestUserProvider implements UserProviderInterface
 {

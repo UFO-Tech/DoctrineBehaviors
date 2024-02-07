@@ -1,9 +1,9 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Model\Tree;
+namespace Miets\DoctrineBehaviors\Model\Tree;
 
 use Doctrine\Common\Collections\Collection;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use Miets\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
 
 trait TreeNodePropertiesTrait
 {

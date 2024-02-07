@@ -1,13 +1,13 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Repository;
+namespace Miets\DoctrineBehaviors\Tests\Repository;
 
 use Doctrine\ORM\AbstractQuery;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Mapping\ClassMetadata;
 use Doctrine\ORM\QueryBuilder;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\SluggableInterface;
-use VasyaXY\DoctrineBehaviors\Repository\DefaultSluggableRepository;
+use Miets\DoctrineBehaviors\Contract\Entity\SluggableInterface;
+use Miets\DoctrineBehaviors\Repository\DefaultSluggableRepository;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 

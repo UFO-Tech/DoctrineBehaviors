@@ -1,11 +1,11 @@
 <?php
 
-use VasyaXY\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
-use VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
-use VasyaXY\DoctrineBehaviors\EventSubscriber\LoggableEventSubscriber;
-use VasyaXY\DoctrineBehaviors\Tests\DatabaseLoader;
-use VasyaXY\DoctrineBehaviors\Tests\Provider\TestLocaleProvider;
-use VasyaXY\DoctrineBehaviors\Tests\Provider\TestUserProvider;
+use Miets\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
+use Miets\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use Miets\DoctrineBehaviors\EventSubscriber\LoggableEventSubscriber;
+use Miets\DoctrineBehaviors\Tests\DatabaseLoader;
+use Miets\DoctrineBehaviors\Tests\Provider\TestLocaleProvider;
+use Miets\DoctrineBehaviors\Tests\Provider\TestUserProvider;
 use Psr\Log\Test\TestLogger;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\Security\Core\Security;
@@ -61,7 +61,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
                 [
                     'name' => 'DoctrineBehaviors',
                     'type' => 'attribute',
-                    'prefix' => 'VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\\',
+                    'prefix' => 'Miets\DoctrineBehaviors\Tests\Fixtures\Entity\\',
                     'dir' => __DIR__ . '/../../tests/Fixtures/Entity',
                     'is_bundle' => false,
                 ],
