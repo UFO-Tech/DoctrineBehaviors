@@ -1,18 +1,18 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Translatable;
+namespace Miets\DoctrineBehaviors\Tests\ORM\Translatable;
 
 use Doctrine\ORM\Mapping\ClassMetadataInfo;
 use Doctrine\Persistence\ObjectRepository;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Contract\Translatable\TranslatableEntityWithCustomInterface;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableCustomIdentifierEntity;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableCustomizedEntity;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableEntity;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableEntityTranslation;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Translation\TranslatableCustomizedEntityTranslation;
+use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Contract\Translatable\TranslatableEntityWithCustomInterface;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableCustomIdentifierEntity;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableCustomizedEntity;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableEntity;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableEntityTranslation;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Translation\TranslatableCustomizedEntityTranslation;
 
 final class TranslatableTest extends AbstractBehaviorTestCase
 {

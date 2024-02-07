@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Model\Loggable;
+namespace Miets\DoctrineBehaviors\Model\Loggable;
 
 use DateTime;
 

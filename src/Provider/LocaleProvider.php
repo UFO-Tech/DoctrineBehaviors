@@ -1,8 +1,8 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Provider;
+namespace Miets\DoctrineBehaviors\Provider;
 
-use VasyaXY\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
+use Miets\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
 use Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
 use Symfony\Component\DependencyInjection\Exception\ParameterNotFoundException;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;

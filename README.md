@@ -3,4 +3,4 @@ Fork of a fork of https://github.com/KnpLabs/DoctrineBehaviors to keep it safe f
 
 Said fork allows this bundle to work in Symfony 7 and 6.4. The original bundle does not work past Symfony 6.3 and therefor is unusable in up-to-date Symfony projects.
 
-See https://github.com/VasyaXY/DoctrineBehaviors for more info on the fork
+See https://github.com/Miets/DoctrineBehaviors for more info on the fork

@@ -1,13 +1,13 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
+namespace Miets\DoctrineBehaviors\EventSubscriber;
 
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Event\OnFlushEventArgs;
 use Doctrine\ORM\Events;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
+use Miets\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
 
 #[AsDoctrineListener(event: Events::onFlush, priority: 500, connection: 'default')]
 #[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]

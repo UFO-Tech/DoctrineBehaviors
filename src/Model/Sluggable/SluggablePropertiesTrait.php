@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Model\Sluggable;
+namespace Miets\DoctrineBehaviors\Model\Sluggable;
 
 trait SluggablePropertiesTrait
 {

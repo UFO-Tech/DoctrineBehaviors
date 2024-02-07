@@ -1,10 +1,10 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Translatable;
+namespace Miets\DoctrineBehaviors\Tests\ORM\Translatable;
 
 use Doctrine\Persistence\ObjectRepository;
-use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable\ExtendedTranslatableEntityWithJoinTableInheritance;
+use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable\ExtendedTranslatableEntityWithJoinTableInheritance;
 
 final class TranslatableJoinTableInheritanceTest extends AbstractBehaviorTestCase
 {

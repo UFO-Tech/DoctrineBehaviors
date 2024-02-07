@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Model\SoftDeletable;
+namespace Miets\DoctrineBehaviors\Model\SoftDeletable;
 
 trait SoftDeletableTrait
 {

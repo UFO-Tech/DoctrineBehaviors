@@ -1,14 +1,14 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Translation;
+namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Translation;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use VasyaXY\DoctrineBehaviors\Model\Translatable\TranslationTrait;
-use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableCustomizedEntity;
+use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Miets\DoctrineBehaviors\Model\Translatable\TranslationTrait;
+use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableCustomizedEntity;
 
 /**
  * Used to test translatable classes which declare a custom translation class.

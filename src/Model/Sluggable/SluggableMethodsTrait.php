@@ -1,8 +1,8 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Model\Sluggable;
+namespace Miets\DoctrineBehaviors\Model\Sluggable;
 
-use VasyaXY\DoctrineBehaviors\Exception\SluggableException;
+use Miets\DoctrineBehaviors\Exception\SluggableException;
 use Symfony\Component\String\Slugger\AsciiSlugger;
 
 trait SluggableMethodsTrait

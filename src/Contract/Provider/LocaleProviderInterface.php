@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Contract\Provider;
+namespace Miets\DoctrineBehaviors\Contract\Provider;
 
 interface LocaleProviderInterface
 {

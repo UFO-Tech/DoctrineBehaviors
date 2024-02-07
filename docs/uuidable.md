@@ -8,8 +8,8 @@ Uuidable generates uuid4 for an entity. Will automatically generate on persist.
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\UuidableInterface;
-use VasyaXY\DoctrineBehaviors\Model\Uuidable\UuidableTrait;
+use Miets\DoctrineBehaviors\Contract\Entity\UuidableInterface;
+use Miets\DoctrineBehaviors\Model\Uuidable\UuidableTrait;
 
 /**
  * @ORM\Entity

@@ -1,12 +1,12 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
+namespace Miets\DoctrineBehaviors\EventSubscriber;
 
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Events;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\LoggableInterface;
+use Miets\DoctrineBehaviors\Contract\Entity\LoggableInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 

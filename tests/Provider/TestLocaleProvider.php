@@ -1,8 +1,8 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Provider;
+namespace Miets\DoctrineBehaviors\Tests\Provider;
 
-use VasyaXY\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
+use Miets\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
 
 final class TestLocaleProvider implements LocaleProviderInterface
 {

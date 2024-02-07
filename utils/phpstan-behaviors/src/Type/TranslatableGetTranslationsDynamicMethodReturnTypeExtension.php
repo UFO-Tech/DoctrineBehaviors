@@ -1,9 +1,9 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\PHPStan\Type;
+namespace Miets\DoctrineBehaviors\PHPStan\Type;
 
 use Doctrine\Common\Collections\Collection;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
 use PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\MethodReflection;

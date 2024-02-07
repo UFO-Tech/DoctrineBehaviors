@@ -8,8 +8,8 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TimestampableInterface;
-use VasyaXY\DoctrineBehaviors\Model\Timestampable\TimestampableTrait;
+use Miets\DoctrineBehaviors\Contract\Entity\TimestampableInterface;
+use Miets\DoctrineBehaviors\Model\Timestampable\TimestampableTrait;
 
 /**
  * @ORM\Entity
@@ -27,7 +27,7 @@ class Category implements TimestampableInterface
 
 use App\Entity\Category;   
 
-/** @var VasyaXY\DoctrineBehaviors\Contract\Entity\TimestampableInterface $category */
+/** @var Miets\DoctrineBehaviors\Contract\Entity\TimestampableInterface $category */
 $category = new Category();
 
 $entityManager->persist($category);

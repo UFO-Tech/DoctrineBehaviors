@@ -1,13 +1,13 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity;
+namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity;
 
 use Doctrine\ORM\Mapping\Id;
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\MappedSuperclass;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TimestampableInterface;
-use VasyaXY\DoctrineBehaviors\Model\Timestampable\TimestampableTrait;
+use Miets\DoctrineBehaviors\Contract\Entity\TimestampableInterface;
+use Miets\DoctrineBehaviors\Model\Timestampable\TimestampableTrait;
 
 #[MappedSuperclass]
 abstract class AbstractTimestampableMappedSuperclassEntity implements TimestampableInterface

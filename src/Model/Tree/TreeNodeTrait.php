@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Model\Tree;
+namespace Miets\DoctrineBehaviors\Model\Tree;
 
 trait TreeNodeTrait
 {

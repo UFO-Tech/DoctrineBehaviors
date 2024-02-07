@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Contract\Entity;
+namespace Miets\DoctrineBehaviors\Contract\Entity;
 
 interface LoggableInterface
 {

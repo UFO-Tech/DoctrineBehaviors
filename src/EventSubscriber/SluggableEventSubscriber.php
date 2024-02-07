@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
+namespace Miets\DoctrineBehaviors\EventSubscriber;
 
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
@@ -9,8 +9,8 @@ use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
 use Doctrine\ORM\Mapping\ClassMetadataInfo;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\SluggableInterface;
-use VasyaXY\DoctrineBehaviors\Repository\DefaultSluggableRepository;
+use Miets\DoctrineBehaviors\Contract\Entity\SluggableInterface;
+use Miets\DoctrineBehaviors\Repository\DefaultSluggableRepository;
 
 #[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]
 #[AsDoctrineListener(event: Events::prePersist, priority: 500, connection: 'default')]

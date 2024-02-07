@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Contract\Entity;
+namespace Miets\DoctrineBehaviors\Contract\Entity;
 
 use Doctrine\Common\Collections\Collection;
 

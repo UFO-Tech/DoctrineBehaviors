@@ -1,13 +1,13 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity;
+namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use VasyaXY\DoctrineBehaviors\Contract\Entity\UuidableInterface;
-use VasyaXY\DoctrineBehaviors\Model\Uuidable\UuidableTrait;
+use Miets\DoctrineBehaviors\Contract\Entity\UuidableInterface;
+use Miets\DoctrineBehaviors\Model\Uuidable\UuidableTrait;
 
 #[Entity]
 class UuidableEntity implements UuidableInterface

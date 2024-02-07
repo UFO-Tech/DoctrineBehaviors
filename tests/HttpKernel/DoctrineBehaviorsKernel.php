@@ -1,9 +1,9 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\HttpKernel;
+namespace Miets\DoctrineBehaviors\Tests\HttpKernel;
 
 use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
-use VasyaXY\DoctrineBehaviors\DoctrineBehaviorsBundle;
+use Miets\DoctrineBehaviors\DoctrineBehaviorsBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Bundle\BundleInterface;

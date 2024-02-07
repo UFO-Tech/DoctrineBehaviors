@@ -1,12 +1,12 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Contract\Translatable;
+namespace Miets\DoctrineBehaviors\Tests\Fixtures\Contract\Translatable;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use VasyaXY\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
+use Miets\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
 
 #[Entity]
 class TranslatableEntityWithCustomInterface implements ExtendedTranslatableInterface

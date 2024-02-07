@@ -1,8 +1,8 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Contract\Translatable;
+namespace Miets\DoctrineBehaviors\Tests\Fixtures\Contract\Translatable;
 
-use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
 
 interface ExtendedTranslatableInterface extends TranslatableInterface
 {

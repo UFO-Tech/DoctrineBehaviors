@@ -1,8 +1,8 @@
 <?php
 
-namespace VasyaXY\DoctrineBehaviors;
+namespace Miets\DoctrineBehaviors;
 
-use VasyaXY\DoctrineBehaviors\Bundle\DependencyInjection\DoctrineBehaviorsExtension;
+use Miets\DoctrineBehaviors\Bundle\DependencyInjection\DoctrineBehaviorsExtension;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
