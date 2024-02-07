@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\EventSubscriber;
+namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
 
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
@@ -10,8 +10,8 @@ use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
 use Doctrine\ORM\Mapping\ClassMetadataInfo;
 use Doctrine\ORM\UnitOfWork;
-use Miets\DoctrineBehaviors\Contract\Entity\BlameableInterface;
-use Miets\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\BlameableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
 
 #[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]
 #[AsDoctrineListener(event: Events::prePersist, priority: 500, connection: 'default')]

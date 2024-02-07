@@ -1,11 +1,11 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\ORM\Sluggable;
+namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Sluggable;
 
 use DateTime;
 use Doctrine\Persistence\ObjectRepository;
-use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable\SluggableMultiEntity;
+use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable\SluggableMultiEntity;
 
 final class SluggableMultiTest extends AbstractBehaviorTestCase
 {

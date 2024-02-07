@@ -1,13 +1,13 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\EventSubscriber;
+namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
 
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
-use Miets\DoctrineBehaviors\Contract\Entity\UuidableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\UuidableInterface;
 
 #[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]
 #[AsDoctrineListener(event: Events::prePersist, priority: 500, connection: 'default')]

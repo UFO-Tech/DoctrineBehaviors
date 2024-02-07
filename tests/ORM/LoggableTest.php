@@ -1,9 +1,9 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\ORM;
+namespace VasyaXY\DoctrineBehaviors\Tests\ORM;
 
-use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\LoggableEntity;
+use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\LoggableEntity;
 use Psr\Log\Test\TestLogger;
 
 final class LoggableTest extends AbstractBehaviorTestCase

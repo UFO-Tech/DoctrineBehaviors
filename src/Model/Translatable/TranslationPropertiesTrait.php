@@ -1,8 +1,8 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Translatable;
+namespace VasyaXY\DoctrineBehaviors\Model\Translatable;
 
-use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
 
 trait TranslationPropertiesTrait
 {

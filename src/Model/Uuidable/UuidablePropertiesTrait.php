@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Uuidable;
+namespace VasyaXY\DoctrineBehaviors\Model\Uuidable;
 
 use Ramsey\Uuid\UuidInterface;
 

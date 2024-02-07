@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Contract\Entity;
+namespace VasyaXY\DoctrineBehaviors\Contract\Entity;
 
 interface SluggableInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity;
+namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;

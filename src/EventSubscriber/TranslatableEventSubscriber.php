@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\EventSubscriber;
+namespace VasyaXY\DoctrineBehaviors\EventSubscriber;
 
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
@@ -10,9 +10,9 @@ use Doctrine\ORM\Events;
 use Doctrine\ORM\Mapping\ClassMetadataInfo;
 use Doctrine\Persistence\ObjectManager;
 use ReflectionClass;
-use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use Miets\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
 
 #[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]
 #[AsDoctrineListener(event: Events::postLoad, priority: 500, connection: 'default')]

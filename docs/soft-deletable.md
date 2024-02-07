@@ -8,8 +8,8 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Miets\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
-use Miets\DoctrineBehaviors\Model\SoftDeletable\SoftDeletableTrait;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
+use VasyaXY\DoctrineBehaviors\Model\SoftDeletable\SoftDeletableTrait;
 
 /**
  * @ORM\Entity
@@ -25,7 +25,7 @@ class Category implements SoftDeletableInterface
 ```php
 <?php
 
-/** @var Miets\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface $category */
+/** @var VasyaXY\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface $category */
 $category = new Category();
 $entityManager->persist($category);
 $entityManager->flush();
@@ -51,7 +51,7 @@ var_dump($category->isDeleted());
 ```php
 <?php
 
-use Miets\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
 
 /** @var SoftDeletableInterface $category */
 $category->restore();
@@ -68,7 +68,7 @@ $entityManager->flush();
 ```php
 <?php
 
-use Miets\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
 
 /** @var SoftDeletableInterface $category */
 $category = new Category();

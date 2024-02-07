@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Exception;
+namespace VasyaXY\DoctrineBehaviors\Exception;
 
 use Exception;
 

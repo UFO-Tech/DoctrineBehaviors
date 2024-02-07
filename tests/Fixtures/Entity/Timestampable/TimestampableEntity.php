@@ -1,14 +1,14 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable;
+namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use Miets\DoctrineBehaviors\Contract\Entity\TimestampableInterface;
-use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use Miets\DoctrineBehaviors\Model\Timestampable\TimestampableTrait;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\TimestampableInterface;
+use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use VasyaXY\DoctrineBehaviors\Model\Timestampable\TimestampableTrait;
 
 #[Entity]
 class TimestampableEntity implements TimestampableInterface

@@ -1,10 +1,10 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\ORM;
+namespace VasyaXY\DoctrineBehaviors\Tests\ORM;
 
-use Miets\DoctrineBehaviors\Contract\Entity\UuidableInterface;
-use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\UuidableEntity;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\UuidableInterface;
+use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\UuidableEntity;
 use Ramsey\Uuid\UuidInterface;
 
 final class UuidableTest extends AbstractBehaviorTestCase

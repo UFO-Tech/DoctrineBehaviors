@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Translatable;
+namespace VasyaXY\DoctrineBehaviors\Model\Translatable;
 
 trait TranslationTrait
 {

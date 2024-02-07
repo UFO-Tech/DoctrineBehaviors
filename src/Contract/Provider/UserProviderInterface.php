@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Contract\Provider;
+namespace VasyaXY\DoctrineBehaviors\Contract\Provider;
 
 interface UserProviderInterface
 {

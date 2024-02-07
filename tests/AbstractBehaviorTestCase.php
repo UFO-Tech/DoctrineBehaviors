@@ -1,12 +1,12 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests;
+namespace VasyaXY\DoctrineBehaviors\Tests;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Logging\DebugStack;
 use Doctrine\DBAL\Platforms\PostgreSQL94Platform;
 use Doctrine\ORM\EntityManagerInterface;
-use Miets\DoctrineBehaviors\Tests\HttpKernel\DoctrineBehaviorsKernel;
+use VasyaXY\DoctrineBehaviors\Tests\HttpKernel\DoctrineBehaviorsKernel;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Timestampable;
+namespace VasyaXY\DoctrineBehaviors\Model\Timestampable;
 
 use DateTimeInterface;
 

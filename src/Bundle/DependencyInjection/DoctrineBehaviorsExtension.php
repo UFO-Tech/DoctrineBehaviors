@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Bundle\DependencyInjection;
+namespace VasyaXY\DoctrineBehaviors\Bundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

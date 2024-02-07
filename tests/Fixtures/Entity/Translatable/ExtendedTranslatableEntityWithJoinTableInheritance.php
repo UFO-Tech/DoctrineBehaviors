@@ -1,10 +1,10 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable;
+namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
-use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
 
 #[Entity]
 class ExtendedTranslatableEntityWithJoinTableInheritance extends TranslatableEntityWithJoinTableInheritance

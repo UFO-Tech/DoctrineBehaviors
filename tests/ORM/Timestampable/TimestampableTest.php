@@ -1,11 +1,11 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\ORM\Timestampable;
+namespace VasyaXY\DoctrineBehaviors\Tests\ORM\Timestampable;
 
 use Datetime;
 use Doctrine\Persistence\ObjectRepository;
-use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable\TimestampableEntity;
+use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable\TimestampableEntity;
 
 final class TimestampableTest extends AbstractBehaviorTestCase
 {

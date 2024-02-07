@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\SoftDeletable;
+namespace VasyaXY\DoctrineBehaviors\Model\SoftDeletable;
 
 use DateTimeInterface;
 

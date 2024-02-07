@@ -1,12 +1,12 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\ORM;
+namespace VasyaXY\DoctrineBehaviors\Tests\ORM;
 
 use DateTime;
 use Doctrine\Persistence\ObjectRepository;
-use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\SoftDeletable\SoftDeletableEntity;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\SoftDeletable\SoftDeletableEntityInherit;
+use VasyaXY\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\SoftDeletable\SoftDeletableEntity;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\SoftDeletable\SoftDeletableEntityInherit;
 
 final class SoftDeletableTest extends AbstractBehaviorTestCase
 {

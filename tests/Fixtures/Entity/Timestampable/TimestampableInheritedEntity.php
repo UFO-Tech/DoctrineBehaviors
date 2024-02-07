@@ -1,11 +1,11 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable;
+namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
-use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\AbstractTimestampableMappedSuperclassEntity;
+use VasyaXY\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity\AbstractTimestampableMappedSuperclassEntity;
 
 #[Entity]
 class TimestampableInheritedEntity extends AbstractTimestampableMappedSuperclassEntity

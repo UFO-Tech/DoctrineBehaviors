@@ -1,14 +1,14 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity;
+namespace VasyaXY\DoctrineBehaviors\Tests\Fixtures\Entity;
 
 use DateTimeInterface;
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use Miets\DoctrineBehaviors\Contract\Entity\LoggableInterface;
-use Miets\DoctrineBehaviors\Model\Loggable\LoggableTrait;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\LoggableInterface;
+use VasyaXY\DoctrineBehaviors\Model\Loggable\LoggableTrait;
 
 #[Entity]
 class LoggableEntity implements LoggableInterface

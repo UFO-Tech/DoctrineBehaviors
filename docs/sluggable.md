@@ -16,8 +16,8 @@ Use cases include SEO (i.e. URLs like `http://example.com/post/3/introduction-to
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Miets\DoctrineBehaviors\Contract\Entity\SluggableInterface;
-use Miets\DoctrineBehaviors\Model\Sluggable\SluggableTrait;
+use VasyaXY\DoctrineBehaviors\Contract\Entity\SluggableInterface;
+use VasyaXY\DoctrineBehaviors\Model\Sluggable\SluggableTrait;
 
 /**
  * @ORM\Entity
