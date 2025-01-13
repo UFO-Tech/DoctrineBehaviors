@@ -6,7 +6,7 @@
         "behaviors", "doctrine", "timestampable", "translatable", "blameable", "softdeletable", "tree", "uuid"
     ],
     "version": "1.0.0",
-    "homepage": "github.com/UFO-Tech",
+    "homepage": "https://github.com/UFO-Tech/DoctrineBehaviors",
     "license": "MIT",
     "authors": [
         {
