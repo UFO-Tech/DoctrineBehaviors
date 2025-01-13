@@ -1,8 +1,8 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Provider;
+namespace Ufo\DoctrineBehaviors\Provider;
 
-use Miets\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
+use Ufo\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
 use Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
 use Symfony\Component\DependencyInjection\Exception\ParameterNotFoundException;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;

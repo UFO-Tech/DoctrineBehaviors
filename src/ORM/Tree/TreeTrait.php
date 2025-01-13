@@ -1,10 +1,10 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\ORM\Tree;
+namespace Ufo\DoctrineBehaviors\ORM\Tree;
 
 use ArrayAccess;
 use Doctrine\ORM\QueryBuilder;
-use Miets\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use Ufo\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
 
 trait TreeTrait
 {

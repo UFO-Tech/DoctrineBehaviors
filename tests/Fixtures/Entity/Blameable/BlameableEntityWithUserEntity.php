@@ -1,14 +1,14 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Blameable;
+namespace Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\Blameable;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use Miets\DoctrineBehaviors\Contract\Entity\BlameableInterface;
-use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use Miets\DoctrineBehaviors\Model\Blameable\BlameableTrait;
+use Ufo\DoctrineBehaviors\Contract\Entity\BlameableInterface;
+use Ufo\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Ufo\DoctrineBehaviors\Model\Blameable\BlameableTrait;
 
 #[Entity]
 class BlameableEntityWithUserEntity implements BlameableInterface

@@ -1,8 +1,8 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Uuidable;
+namespace Ufo\DoctrineBehaviors\Model\Uuidable;
 
-use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Ufo\DoctrineBehaviors\Exception\ShouldNotHappenException;
 use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\UuidInterface;
 

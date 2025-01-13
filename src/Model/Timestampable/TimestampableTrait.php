@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Timestampable;
+namespace Ufo\DoctrineBehaviors\Model\Timestampable;
 
 trait TimestampableTrait
 {

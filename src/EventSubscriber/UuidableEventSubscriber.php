@@ -1,17 +1,16 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\EventSubscriber;
+namespace Ufo\DoctrineBehaviors\EventSubscriber;
 
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
-use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
-use Doctrine\ORM\Event\LifecycleEventArgs;
+use Doctrine\Persistence\Event\LifecycleEventArgs;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
-use Miets\DoctrineBehaviors\Contract\Entity\UuidableInterface;
+use Ufo\DoctrineBehaviors\Contract\Entity\UuidableInterface;
 
 #[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]
 #[AsDoctrineListener(event: Events::prePersist, priority: 500, connection: 'default')]
-final class UuidableEventSubscriber // implements EventSubscriberInterface
+final class UuidableEventSubscriber 
 {
     public function loadClassMetadata(LoadClassMetadataEventArgs $loadClassMetadataEventArgs): void
     {

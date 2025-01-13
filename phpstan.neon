@@ -22,9 +22,9 @@ parameters:
 
     ignoreErrors:
         # traits
-        - '#Call to an undefined method Miets\\DoctrineBehaviors\\Contract\\Provider\\UserProviderInterface::changeUser\(\)#'
-        - '#Call to an undefined method Miets\\DoctrineBehaviors\\Contract\\Entity\\TreeNodeInterface::getId\(\)#'
-        - '#Call to an undefined method Miets\\DoctrineBehaviors\\Contract\\Entity\\TreeNodeInterface::to(Flat)?Array\(\)#'
+        - '#Call to an undefined method Ufo\\DoctrineBehaviors\\Contract\\Provider\\UserProviderInterface::changeUser\(\)#'
+        - '#Call to an undefined method Ufo\\DoctrineBehaviors\\Contract\\Entity\\TreeNodeInterface::getId\(\)#'
+        - '#Call to an undefined method Ufo\\DoctrineBehaviors\\Contract\\Entity\\TreeNodeInterface::to(Flat)?Array\(\)#'
 
         # buggy
         - '#of function call_user_func_array expects callable#'
@@ -34,13 +34,13 @@ parameters:
         - '#has parameter (.*?) with no (typehint|value type) specified#'
         - '#Unable to resolve the template type T#'
         # cache buggy
-        - '#Access to an undefined property Miets\\DoctrineBehaviors\\Tests\\Fixtures\\Entity\\TreeNodeEntity\:\:\$parentNodePath#'
+        - '#Access to an undefined property Ufo\\DoctrineBehaviors\\Tests\\Fixtures\\Entity\\TreeNodeEntity\:\:\$parentNodePath#'
         - '#Property with protected modifier is not allowed\. Use interface contract method instead#'
 
         # tests
-        - '#Offset 0 does not exist on array<Miets\\DoctrineBehaviors\\Contract\\Entity\\TreeNodeInterface\>\|ArrayAccess\|null#'
+        - '#Offset 0 does not exist on array<Ufo\\DoctrineBehaviors\\Contract\\Entity\\TreeNodeInterface\>\|ArrayAccess\|null#'
 
-        - '#Cannot call method addChildNode\(\) on Miets\\DoctrineBehaviors\\Contract\\Entity\\TreeNodeInterface\|null#'
+        - '#Cannot call method addChildNode\(\) on Ufo\\DoctrineBehaviors\\Contract\\Entity\\TreeNodeInterface\|null#'
 
         - '#Do not use "\$entityManager->getRepository\(\)" outside of the constructor of repository service#'
 
@@ -68,7 +68,7 @@ parameters:
 
         - '#Method call on new expression is not allowed#'
         - '#Do not use factory/method call in constructor\. Put factory in config and get service with dependency injection#'
-        - '#Property Miets\\DoctrineBehaviors\\Tests\\ORM\\Blameable\\BlameableWithEntityTest\:\:\$userEntity \(Miets\\DoctrineBehaviors\\Tests\\Fixtures\\Entity\\UserEntity\) does not accept object\|string\|null#'
+        - '#Property Ufo\\DoctrineBehaviors\\Tests\\ORM\\Blameable\\BlameableWithEntityTest\:\:\$userEntity \(Ufo\\DoctrineBehaviors\\Tests\\Fixtures\\Entity\\UserEntity\) does not accept object\|string\|null#'
 
         - '#\$this as argument is not allowed\. Refactor method to service composition#'
         - '#Use separate function calls with readable variable names#'
@@ -112,16 +112,16 @@ parameters:
 
         # entities
         -
-            message: '#Property Miets\\DoctrineBehaviors\\Tests\\Fixtures\\Entity\\(.*?)\:\:\$(.*?) is never written, only read#'
+            message: '#Property Ufo\\DoctrineBehaviors\\Tests\\Fixtures\\Entity\\(.*?)\:\:\$(.*?) is never written, only read#'
             path: tests/Fixtures/Entity/*
 
         # not generics
-        - '#Parameter \#1 \$type of method Miets\\DoctrineBehaviors\\Tests\\AbstractBehaviorTestCase\:\:getService\(\) expects class\-string(.*?), string given#'
+        - '#Parameter \#1 \$type of method Ufo\\DoctrineBehaviors\\Tests\\AbstractBehaviorTestCase\:\:getService\(\) expects class\-string(.*?), string given#'
 
-        - '#Property Miets\\DoctrineBehaviors\\Tests\\AbstractBehaviorTestCase\:\:\$entityManager \(Doctrine\\ORM\\EntityManagerInterface\) does not accept doctrine\.orm\.entity_manager#'
+        - '#Property Ufo\\DoctrineBehaviors\\Tests\\AbstractBehaviorTestCase\:\:\$entityManager \(Doctrine\\ORM\\EntityManagerInterface\) does not accept doctrine\.orm\.entity_manager#'
 
         # specific implementation
-        - '#Property Miets\\DoctrineBehaviors\\Tests\\ORM\\Blameable\\BlameableTest\:\:\$userProvider \(Miets\\DoctrineBehaviors\\Tests\\Provider\\EntityUserProvider\) does not accept Miets\\DoctrineBehaviors\\Contract\\Provider\\UserProviderInterface#'
+        - '#Property Ufo\\DoctrineBehaviors\\Tests\\ORM\\Blameable\\BlameableTest\:\:\$userProvider \(Ufo\\DoctrineBehaviors\\Tests\\Provider\\EntityUserProvider\) does not accept Ufo\\DoctrineBehaviors\\Contract\\Provider\\UserProviderInterface#'
 
         # different entity can return differnt types - reusable trait
         -

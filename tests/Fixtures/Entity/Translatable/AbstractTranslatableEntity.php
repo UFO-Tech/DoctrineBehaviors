@@ -1,10 +1,10 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable;
+namespace Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\Translatable;
 
 use Doctrine\ORM\Mapping\MappedSuperclass;
-use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use Miets\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
+use Ufo\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use Ufo\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
 
 #[MappedSuperclass]
 abstract class AbstractTranslatableEntity implements TranslatableInterface

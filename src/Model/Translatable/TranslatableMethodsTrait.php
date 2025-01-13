@@ -1,11 +1,11 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Translatable;
+namespace Ufo\DoctrineBehaviors\Model\Translatable;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use Miets\DoctrineBehaviors\Exception\TranslatableException;
+use Ufo\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Ufo\DoctrineBehaviors\Exception\TranslatableException;
 
 trait TranslatableMethodsTrait
 {

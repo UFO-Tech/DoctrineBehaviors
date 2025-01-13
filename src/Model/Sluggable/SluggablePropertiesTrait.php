@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Sluggable;
+namespace Ufo\DoctrineBehaviors\Model\Sluggable;
 
 trait SluggablePropertiesTrait
 {

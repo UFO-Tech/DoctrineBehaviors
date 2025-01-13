@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Uuidable;
+namespace Ufo\DoctrineBehaviors\Model\Uuidable;
 
 trait UuidableTrait
 {

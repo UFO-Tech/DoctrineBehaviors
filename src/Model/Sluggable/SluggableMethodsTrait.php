@@ -1,8 +1,8 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Sluggable;
+namespace Ufo\DoctrineBehaviors\Model\Sluggable;
 
-use Miets\DoctrineBehaviors\Exception\SluggableException;
+use Ufo\DoctrineBehaviors\Exception\SluggableException;
 use Symfony\Component\String\Slugger\AsciiSlugger;
 
 trait SluggableMethodsTrait

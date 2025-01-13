@@ -1,20 +1,18 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\EventSubscriber;
+namespace Ufo\DoctrineBehaviors\EventSubscriber;
 
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
-use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
-use Miets\DoctrineBehaviors\Contract\Entity\TimestampableInterface;
+use Ufo\DoctrineBehaviors\Contract\Entity\TimestampableInterface;
 
 #[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]
-final class TimestampableEventSubscriber // implements EventSubscriberInterface
+final class TimestampableEventSubscriber
 {
     public function __construct(
         private string $timestampableDateFieldType
-    ) {
-    }
+    ) {}
 
     public function loadClassMetadata(LoadClassMetadataEventArgs $loadClassMetadataEventArgs): void
     {

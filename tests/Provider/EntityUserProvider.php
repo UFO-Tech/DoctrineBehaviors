@@ -1,11 +1,11 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Provider;
+namespace Ufo\DoctrineBehaviors\Tests\Provider;
 
 use Doctrine\ORM\EntityManagerInterface;
-use Miets\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
-use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
+use Ufo\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use Ufo\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
 
 final class EntityUserProvider implements UserProviderInterface
 {

@@ -1,19 +1,18 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\EventSubscriber;
+namespace Ufo\DoctrineBehaviors\EventSubscriber;
 
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
-use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
-use Doctrine\ORM\Event\LifecycleEventArgs;
+use Doctrine\Persistence\Event\LifecycleEventArgs;
 use Doctrine\ORM\Events;
-use Miets\DoctrineBehaviors\Contract\Entity\LoggableInterface;
+use Ufo\DoctrineBehaviors\Contract\Entity\LoggableInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 
 #[AsDoctrineListener(event: Events::postPersist, priority: 500, connection: 'default')]
 #[AsDoctrineListener(event: Events::postUpdate, priority: 500, connection: 'default')]
 #[AsDoctrineListener(event: Events::preRemove, priority: 500, connection: 'default')]
-final class LoggableEventSubscriber // implements EventSubscriberInterface
+final class LoggableEventSubscriber 
 {
     public function __construct(
         private LoggerInterface $logger

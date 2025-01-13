@@ -1,11 +1,11 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\SoftDeletable;
+namespace Ufo\DoctrineBehaviors\Model\SoftDeletable;
 
 use DateTime;
 use DateTimeInterface;
 use DateTimeZone;
-use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Ufo\DoctrineBehaviors\Exception\ShouldNotHappenException;
 
 trait SoftDeletableMethodsTrait
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Provider;
+namespace Ufo\DoctrineBehaviors\Tests\Provider;
 
-use Miets\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use Ufo\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
 
 final class TestUserProvider implements UserProviderInterface
 {

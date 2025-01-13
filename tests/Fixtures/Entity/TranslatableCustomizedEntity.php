@@ -1,14 +1,14 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity;
+namespace Ufo\DoctrineBehaviors\Tests\Fixtures\Entity;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use Miets\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Translation\TranslatableCustomizedEntityTranslation;
+use Ufo\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use Ufo\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\Translation\TranslatableCustomizedEntityTranslation;
 
 /**
  * Used to test translation classes which declare custom translatable classes.

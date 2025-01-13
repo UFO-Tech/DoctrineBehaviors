@@ -1,12 +1,12 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\ORM\Blameable;
+namespace Ufo\DoctrineBehaviors\Tests\ORM\Blameable;
 
 use Doctrine\Persistence\ObjectRepository;
-use Miets\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
-use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Blameable\BlameableEntityWithUserEntity;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
+use Ufo\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use Ufo\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\Blameable\BlameableEntityWithUserEntity;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
 
 final class BlameableWithEntityTest extends AbstractBehaviorTestCase
 {

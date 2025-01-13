@@ -1,8 +1,8 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\PHPStan\Type;
+namespace Ufo\DoctrineBehaviors\PHPStan\Type;
 
-use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Ufo\DoctrineBehaviors\Contract\Entity\TranslationInterface;
 use PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\MethodReflection;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Translatable;
+namespace Ufo\DoctrineBehaviors\Model\Translatable;
 
-use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use Ufo\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
 use Nette\Utils\Strings;
 
 trait TranslationMethodsTrait

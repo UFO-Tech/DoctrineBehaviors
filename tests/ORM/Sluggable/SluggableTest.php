@@ -1,12 +1,12 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\ORM\Sluggable;
+namespace Ufo\DoctrineBehaviors\Tests\ORM\Sluggable;
 
 use DateTime;
 use Doctrine\Persistence\ObjectRepository;
 use Iterator;
-use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable\SluggableEntity;
+use Ufo\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable\SluggableEntity;
 
 final class SluggableTest extends AbstractBehaviorTestCase
 {

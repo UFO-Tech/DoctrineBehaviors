@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity\SoftDeletable;
+namespace Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\SoftDeletable;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\DiscriminatorMap;
@@ -8,13 +8,13 @@ use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
 use Doctrine\ORM\Mapping\InheritanceType;
-use Miets\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
-use Miets\DoctrineBehaviors\Model\SoftDeletable\SoftDeletableTrait;
+use Ufo\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
+use Ufo\DoctrineBehaviors\Model\SoftDeletable\SoftDeletableTrait;
 
 #[Entity]
 #[InheritanceType(value: 'SINGLE_TABLE')]
 #[DiscriminatorMap(value: [
-    'mainclass' => \Miets\DoctrineBehaviors\Tests\Fixtures\Entity\SoftDeletable\SoftDeletableEntity::class,
+    'mainclass' => \Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\SoftDeletable\SoftDeletableEntity::class,
     'subclass' => SoftDeletableEntityInherit::class,
 ])]
 class SoftDeletableEntity implements SoftDeletableInterface

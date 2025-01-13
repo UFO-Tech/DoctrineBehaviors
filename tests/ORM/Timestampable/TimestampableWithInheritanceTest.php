@@ -1,10 +1,10 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\ORM\Timestampable;
+namespace Ufo\DoctrineBehaviors\Tests\ORM\Timestampable;
 
 use DateTime;
-use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable\TimestampableInheritedEntity;
+use Ufo\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\Timestampable\TimestampableInheritedEntity;
 
 final class TimestampableWithInheritanceTest extends AbstractBehaviorTestCase
 {

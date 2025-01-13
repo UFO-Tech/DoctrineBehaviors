@@ -1,9 +1,9 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Tree;
+namespace Ufo\DoctrineBehaviors\Model\Tree;
 
 use Doctrine\Common\Collections\Collection;
-use Miets\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use Ufo\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
 
 trait TreeNodePropertiesTrait
 {

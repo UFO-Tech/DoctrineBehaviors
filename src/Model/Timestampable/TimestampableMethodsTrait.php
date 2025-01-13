@@ -1,11 +1,11 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Timestampable;
+namespace Ufo\DoctrineBehaviors\Model\Timestampable;
 
 use DateTime;
 use DateTimeInterface;
 use DateTimeZone;
-use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Ufo\DoctrineBehaviors\Exception\ShouldNotHappenException;
 
 trait TimestampableMethodsTrait
 {

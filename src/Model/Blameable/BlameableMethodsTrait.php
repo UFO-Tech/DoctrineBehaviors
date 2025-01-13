@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Blameable;
+namespace Ufo\DoctrineBehaviors\Model\Blameable;
 
 trait BlameableMethodsTrait
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Translatable;
+namespace Ufo\DoctrineBehaviors\Model\Translatable;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Ufo\DoctrineBehaviors\Contract\Entity\TranslationInterface;
 
 trait TranslatablePropertiesTrait
 {

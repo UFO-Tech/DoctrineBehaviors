@@ -1,9 +1,9 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Repository;
+namespace Ufo\DoctrineBehaviors\Repository;
 
 use Doctrine\ORM\EntityManagerInterface;
-use Miets\DoctrineBehaviors\Contract\Entity\SluggableInterface;
+use Ufo\DoctrineBehaviors\Contract\Entity\SluggableInterface;
 
 final class DefaultSluggableRepository
 {

@@ -1,21 +1,20 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\EventSubscriber;
+namespace Ufo\DoctrineBehaviors\EventSubscriber;
 
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
-use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\Event\LifecycleEventArgs;
+use Doctrine\Persistence\Event\LifecycleEventArgs;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
-use Doctrine\ORM\Mapping\ClassMetadataInfo;
-use Miets\DoctrineBehaviors\Contract\Entity\SluggableInterface;
-use Miets\DoctrineBehaviors\Repository\DefaultSluggableRepository;
+use Doctrine\ORM\Mapping\ClassMetadata;
+use Ufo\DoctrineBehaviors\Contract\Entity\SluggableInterface;
+use Ufo\DoctrineBehaviors\Repository\DefaultSluggableRepository;
 
 #[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]
 #[AsDoctrineListener(event: Events::prePersist, priority: 500, connection: 'default')]
 #[AsDoctrineListener(event: Events::preUpdate, priority: 500, connection: 'default')]
-final class SluggableEventSubscriber // implements EventSubscriberInterface
+final class SluggableEventSubscriber 
 {
     /**
      * @var string
@@ -60,7 +59,7 @@ final class SluggableEventSubscriber // implements EventSubscriberInterface
         return [Events::loadClassMetadata, Events::prePersist, Events::preUpdate];
     }
 
-    private function shouldSkip(ClassMetadataInfo $classMetadataInfo): bool
+    private function shouldSkip(ClassMetadata $classMetadataInfo): bool
     {
         if (! is_a($classMetadataInfo->getName(), SluggableInterface::class, true)) {
             return true;

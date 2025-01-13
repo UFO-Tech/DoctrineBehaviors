@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Contract\Entity;
+namespace Ufo\DoctrineBehaviors\Contract\Entity;
 
 use Ramsey\Uuid\UuidInterface;
 

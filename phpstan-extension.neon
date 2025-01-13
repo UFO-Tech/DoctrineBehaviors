@@ -1,10 +1,10 @@
 services:
     -
-        class: Miets\DoctrineBehaviors\PHPStan\Type\TranslatableTranslateDynamicMethodReturnTypeExtension
+        class: Ufo\DoctrineBehaviors\PHPStan\Type\TranslatableTranslateDynamicMethodReturnTypeExtension
         tags: [phpstan.broker.dynamicMethodReturnTypeExtension]
     -
-        class: Miets\DoctrineBehaviors\PHPStan\Type\TranslatableGetTranslationsDynamicMethodReturnTypeExtension
+        class: Ufo\DoctrineBehaviors\PHPStan\Type\TranslatableGetTranslationsDynamicMethodReturnTypeExtension
         tags: [phpstan.broker.dynamicMethodReturnTypeExtension]
     -
-        class: Miets\DoctrineBehaviors\PHPStan\Type\TranslationGetTranslatableDynamicMethodReturnTypeExtension
+        class: Ufo\DoctrineBehaviors\PHPStan\Type\TranslationGetTranslatableDynamicMethodReturnTypeExtension
         tags: [phpstan.broker.dynamicMethodReturnTypeExtension]

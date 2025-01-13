@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Tree;
+namespace Ufo\DoctrineBehaviors\Model\Tree;
 
 trait TreeNodeTrait
 {

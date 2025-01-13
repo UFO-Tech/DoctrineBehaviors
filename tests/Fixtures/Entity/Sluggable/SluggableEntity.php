@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable;
+namespace Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\Sluggable;
 
 use DateTime;
 use DateTimeInterface;
@@ -8,9 +8,9 @@ use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use Miets\DoctrineBehaviors\Contract\Entity\SluggableInterface;
-use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use Miets\DoctrineBehaviors\Model\Sluggable\SluggableTrait;
+use Ufo\DoctrineBehaviors\Contract\Entity\SluggableInterface;
+use Ufo\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Ufo\DoctrineBehaviors\Model\Sluggable\SluggableTrait;
 
 #[Entity]
 class SluggableEntity implements SluggableInterface

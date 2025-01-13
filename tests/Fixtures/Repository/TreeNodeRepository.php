@@ -1,9 +1,9 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Fixtures\Repository;
+namespace Ufo\DoctrineBehaviors\Tests\Fixtures\Repository;
 
 use Doctrine\ORM\EntityRepository;
-use Miets\DoctrineBehaviors\ORM\Tree\TreeTrait;
+use Ufo\DoctrineBehaviors\ORM\Tree\TreeTrait;
 
 final class TreeNodeRepository extends EntityRepository
 {

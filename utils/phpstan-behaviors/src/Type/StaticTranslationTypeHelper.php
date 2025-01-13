@@ -1,10 +1,10 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\PHPStan\Type;
+namespace Ufo\DoctrineBehaviors\PHPStan\Type;
 
-use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use Miets\DoctrineBehaviors\PHPStan\Exception\PHPStanTypeException;
+use Ufo\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use Ufo\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Ufo\DoctrineBehaviors\PHPStan\Exception\PHPStanTypeException;
 use PhpParser\Node\Expr\MethodCall;
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\ReflectionProvider;

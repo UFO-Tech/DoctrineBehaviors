@@ -10,8 +10,8 @@ Loggable is able to track lifecycle modifications and log them using any third p
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Miets\DoctrineBehaviors\Model\Loggable\LoggableTrait;
-use Miets\DoctrineBehaviors\Contract\Entity\LoggableInterface;
+use Ufo\DoctrineBehaviors\Model\Loggable\LoggableTrait;
+use Ufo\DoctrineBehaviors\Contract\Entity\LoggableInterface;
 
 /**
  * @ORM\Entity

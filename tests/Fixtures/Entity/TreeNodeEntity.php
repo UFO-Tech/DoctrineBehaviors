@@ -1,15 +1,15 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Fixtures\Entity;
+namespace Ufo\DoctrineBehaviors\Tests\Fixtures\Entity;
 
 use ArrayAccess;
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
-use Miets\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
-use Miets\DoctrineBehaviors\Model\Tree\TreeNodeTrait;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Repository\TreeNodeRepository;
+use Ufo\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use Ufo\DoctrineBehaviors\Model\Tree\TreeNodeTrait;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Repository\TreeNodeRepository;
 use Stringable;
 
 #[Entity(repositoryClass: TreeNodeRepository::class)]

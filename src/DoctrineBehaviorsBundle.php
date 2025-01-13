@@ -1,8 +1,8 @@
 <?php
 
-namespace Miets\DoctrineBehaviors;
+namespace Ufo\DoctrineBehaviors;
 
-use Miets\DoctrineBehaviors\Bundle\DependencyInjection\DoctrineBehaviorsExtension;
+use Ufo\DoctrineBehaviors\Bundle\DependencyInjection\DoctrineBehaviorsExtension;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

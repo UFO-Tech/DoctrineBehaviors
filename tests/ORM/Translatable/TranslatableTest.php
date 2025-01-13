@@ -1,18 +1,18 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\ORM\Translatable;
+namespace Ufo\DoctrineBehaviors\Tests\ORM\Translatable;
 
 use Doctrine\ORM\Mapping\ClassMetadataInfo;
 use Doctrine\Persistence\ObjectRepository;
-use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Contract\Translatable\TranslatableEntityWithCustomInterface;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableCustomIdentifierEntity;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableCustomizedEntity;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableEntity;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableEntityTranslation;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\Translation\TranslatableCustomizedEntityTranslation;
+use Ufo\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use Ufo\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Ufo\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Contract\Translatable\TranslatableEntityWithCustomInterface;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableCustomIdentifierEntity;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableCustomizedEntity;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableEntity;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\TranslatableEntityTranslation;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\Translation\TranslatableCustomizedEntityTranslation;
 
 final class TranslatableTest extends AbstractBehaviorTestCase
 {

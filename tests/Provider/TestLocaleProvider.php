@@ -1,8 +1,8 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\Provider;
+namespace Ufo\DoctrineBehaviors\Tests\Provider;
 
-use Miets\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
+use Ufo\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
 
 final class TestLocaleProvider implements LocaleProviderInterface
 {

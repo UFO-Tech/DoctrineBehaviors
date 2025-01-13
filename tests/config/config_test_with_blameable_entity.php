@@ -1,8 +1,8 @@
 <?php
 
-use Miets\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
-use Miets\DoctrineBehaviors\Tests\Provider\EntityUserProvider;
+use Ufo\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\UserEntity;
+use Ufo\DoctrineBehaviors\Tests\Provider\EntityUserProvider;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 
 return static function (ContainerConfigurator $containerConfigurator): void {

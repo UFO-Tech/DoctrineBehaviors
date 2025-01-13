@@ -1,17 +1,16 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\EventSubscriber;
+namespace Ufo\DoctrineBehaviors\EventSubscriber;
 
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
-use Doctrine\Bundle\DoctrineBundle\EventSubscriber\EventSubscriberInterface;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Event\OnFlushEventArgs;
 use Doctrine\ORM\Events;
-use Miets\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
+use Ufo\DoctrineBehaviors\Contract\Entity\SoftDeletableInterface;
 
 #[AsDoctrineListener(event: Events::onFlush, priority: 500, connection: 'default')]
 #[AsDoctrineListener(event: Events::loadClassMetadata, priority: 500, connection: 'default')]
-final class SoftDeletableEventSubscriber // implements EventSubscriberInterface
+final class SoftDeletableEventSubscriber 
 {
     /**
      * @var string

@@ -1,13 +1,13 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Tests\ORM;
+namespace Ufo\DoctrineBehaviors\Tests\ORM;
 
 use Iterator;
-use Miets\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
-use Miets\DoctrineBehaviors\Exception\TreeException;
-use Miets\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Entity\TreeNodeEntity;
-use Miets\DoctrineBehaviors\Tests\Fixtures\Repository\TreeNodeRepository;
+use Ufo\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use Ufo\DoctrineBehaviors\Exception\TreeException;
+use Ufo\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\TreeNodeEntity;
+use Ufo\DoctrineBehaviors\Tests\Fixtures\Repository\TreeNodeRepository;
 use Nette\Utils\Json;
 
 final class TreeNodeTest extends AbstractBehaviorTestCase

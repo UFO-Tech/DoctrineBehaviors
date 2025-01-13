@@ -23,8 +23,8 @@ This entity contains the fields you want to be translatable.
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Miets\DoctrineBehaviors\Contract\Entity\TranslationInterface;
-use Miets\DoctrineBehaviors\Model\Translatable\TranslationTrait;
+use Ufo\DoctrineBehaviors\Contract\Entity\TranslationInterface;
+use Ufo\DoctrineBehaviors\Model\Translatable\TranslationTrait;
 
 #[ORM\Entity]
 class CategoryTranslation implements TranslationInterface
@@ -71,8 +71,8 @@ this entity should only contain fields that you don't need to translate.
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
-use Miets\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
+use Ufo\DoctrineBehaviors\Contract\Entity\TranslatableInterface;
+use Ufo\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
 
 #[ORM\Entity]
 class Category implements TranslatableInterface
@@ -99,7 +99,7 @@ you can now work on translations using `translate()` or `getTranslations()` meth
 ```php
 <?php
 
-/** @var \Miets\DoctrineBehaviors\Contract\Entity\TranslatableInterface $category */
+/** @var \Ufo\DoctrineBehaviors\Contract\Entity\TranslatableInterface $category */
 $category = new Category();
 $category->translate('fr')->setName('Chaussures');
 $category->translate('en')->setName('Shoes');
@@ -128,7 +128,7 @@ then put overrided traits in that folder.
 
 namespace AppBundle\Behavior;
 
-use Miets\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
+use Ufo\DoctrineBehaviors\Model\Translatable\TranslatableTrait;
 
 trait TranslatableTrait
 {
@@ -149,7 +149,7 @@ trait TranslatableTrait
 
 namespace AppBundle\Behavior;
 
-use Miets\DoctrineBehaviors\Model\Translatable\TranslationTrait;
+use Ufo\DoctrineBehaviors\Model\Translatable\TranslationTrait;
 
 trait TranslationTrait
 {
@@ -173,7 +173,7 @@ in the translation entity. If you override one, you also need to override the ot
 
 #### Provide Current Locale
 
-This library provides an interface `Miets\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface` that [by default returns the current locale using Symfony `RequestStack` or `TranslatorInterface`](https://github.com/Miets/DoctrineBehaviors/blob/master/src/Provider/LocaleProvider.php).
+This library provides an interface `Ufo\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface` that [by default returns the current locale using Symfony `RequestStack` or `TranslatorInterface`](https://github.com/Ufo/DoctrineBehaviors/blob/master/src/Provider/LocaleProvider.php).
 
 #### Proxy Translations
 

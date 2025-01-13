@@ -1,11 +1,11 @@
 <?php
 
-use Miets\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
-use Miets\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
-use Miets\DoctrineBehaviors\EventSubscriber\LoggableEventSubscriber;
-use Miets\DoctrineBehaviors\Tests\DatabaseLoader;
-use Miets\DoctrineBehaviors\Tests\Provider\TestLocaleProvider;
-use Miets\DoctrineBehaviors\Tests\Provider\TestUserProvider;
+use Ufo\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
+use Ufo\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
+use Ufo\DoctrineBehaviors\EventSubscriber\LoggableEventSubscriber;
+use Ufo\DoctrineBehaviors\Tests\DatabaseLoader;
+use Ufo\DoctrineBehaviors\Tests\Provider\TestLocaleProvider;
+use Ufo\DoctrineBehaviors\Tests\Provider\TestUserProvider;
 use Psr\Log\Test\TestLogger;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\Security\Core\Security;
@@ -61,7 +61,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
                 [
                     'name' => 'DoctrineBehaviors',
                     'type' => 'attribute',
-                    'prefix' => 'Miets\DoctrineBehaviors\Tests\Fixtures\Entity\\',
+                    'prefix' => 'Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\\',
                     'dir' => __DIR__ . '/../../tests/Fixtures/Entity',
                     'is_bundle' => false,
                 ],

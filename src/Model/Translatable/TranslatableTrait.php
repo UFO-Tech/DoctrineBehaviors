@@ -1,6 +1,6 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Translatable;
+namespace Ufo\DoctrineBehaviors\Model\Translatable;
 
 trait TranslatableTrait
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Miets\DoctrineBehaviors\Model\Tree;
+namespace Ufo\DoctrineBehaviors\Model\Tree;
 
 use Closure;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
-use Miets\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
-use Miets\DoctrineBehaviors\Exception\ShouldNotHappenException;
-use Miets\DoctrineBehaviors\Exception\TreeException;
+use Ufo\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
+use Ufo\DoctrineBehaviors\Exception\ShouldNotHappenException;
+use Ufo\DoctrineBehaviors\Exception\TreeException;
 use Nette\Utils\Json;
 
 trait TreeNodeMethodsTrait
