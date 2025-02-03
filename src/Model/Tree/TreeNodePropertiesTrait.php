@@ -14,7 +14,7 @@ trait TreeNodePropertiesTrait
     /**
      * @var TreeNodeInterface[]
      */
-    private Collection $childNodes;
+    private ?Collection $childNodes = null;
 
     private ?TreeNodeInterface $parentNode;
 }
