@@ -7,18 +7,14 @@ use Ufo\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
 
 trait TreeNodePropertiesTrait
 {
-    /**
-     * @var string
-     */
-    protected $materializedPath = '';
+    protected string $materializedPath = '';
+
+    protected string $parentNodePath = '';
 
     /**
-     * @var Collection|TreeNodeInterface[]
+     * @var TreeNodeInterface[]
      */
-    private $childNodes;
+    private Collection $childNodes;
 
-    /**
-     * @var TreeNodeInterface|null
-     */
-    private $parentNode;
+    private ?TreeNodeInterface $parentNode;
 }

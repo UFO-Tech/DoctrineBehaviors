@@ -4,18 +4,9 @@ namespace Ufo\DoctrineBehaviors\Model\Blameable;
 
 trait BlameablePropertiesTrait
 {
-    /**
-     * @var string|int|object
-     */
-    protected $createdBy;
+    protected string|int|object $createdBy;
 
-    /**
-     * @var string|int|object
-     */
-    protected $updatedBy;
+    protected string|int|object $updatedBy;
 
-    /**
-     * @var string|int|object
-     */
-    protected $deletedBy;
+    protected string|int|object $deletedBy;
 }

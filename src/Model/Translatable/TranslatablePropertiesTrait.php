@@ -10,13 +10,13 @@ trait TranslatablePropertiesTrait
     /**
      * @var Collection<string, TranslationInterface>
      */
-    protected $translations = null;
+    protected ?Collection $translations = null;
 
     /**
      * @see mergeNewTranslations
      * @var Collection<string, TranslationInterface>
      */
-    protected $newTranslations = null;
+    protected ?Collection $newTranslations = null;
 
     /**
      * currentLocale is a non persisted field configured during postLoad event
