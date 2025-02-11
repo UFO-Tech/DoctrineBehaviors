@@ -6,7 +6,6 @@ use DateTimeInterface;
 
 trait TimestampablePropertiesTrait
 {
-    protected DateTimeInterface $createdAt;
-
-    protected DateTimeInterface $updatedAt;
+    protected ?DateTimeInterface $createdAt = null;
+    protected ?DateTimeInterface $updatedAt = null;
 }
