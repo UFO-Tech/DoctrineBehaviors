@@ -2,6 +2,7 @@
 
 namespace Ufo\DoctrineBehaviors\Tests\ORM;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use Iterator;
 use Ufo\DoctrineBehaviors\Contract\Entity\TreeNodeInterface;
 use Ufo\DoctrineBehaviors\Exception\TreeException;
@@ -68,7 +69,7 @@ final class TreeNodeTest extends AbstractBehaviorTestCase
 
     public function testIsRoot(): void
     {
-        $treeNodeEntity = $this->buildTree();
+        $treeNodeEntity = self::buildTree();
 
         $this->assertTrue($treeNodeEntity->getRootNode()->isRootNode());
         $this->assertTrue($treeNodeEntity->isRootNode());
@@ -76,7 +77,7 @@ final class TreeNodeTest extends AbstractBehaviorTestCase
 
     public function testIsLeaf(): void
     {
-        $treeNodeEntity = $this->buildTree();
+        $treeNodeEntity = self::buildTree();
 
         $this->assertTrue($treeNodeEntity[0][0][0]->isLeafNode());
         $this->assertTrue($treeNodeEntity[1]->isLeafNode());
@@ -84,7 +85,7 @@ final class TreeNodeTest extends AbstractBehaviorTestCase
 
     public function testGetRoot(): void
     {
-        $treeNodeEntity = $this->buildTree();
+        $treeNodeEntity = self::buildTree();
 
         $this->assertSame($treeNodeEntity, $treeNodeEntity->getRootNode());
         $this->assertNull($treeNodeEntity->getRootNode()->getParentNode());
@@ -113,17 +114,15 @@ final class TreeNodeTest extends AbstractBehaviorTestCase
         $treeNodeEntity->setMaterializedPath('/0/1/2/3/4/5/6/');
     }
 
-    /**
-     * @dataProvider provideIsChildNodeOf()
-     */
+    #[DataProvider('provideIsChildNodeOf')]
     public function testTestisChildNodeOf(TreeNodeInterface $child, TreeNodeInterface $parent, bool $expected): void
     {
         $this->assertSame($expected, $child->isChildNodeOf($parent));
     }
 
-    public function provideIsChildNodeOf(): Iterator
+    public static function provideIsChildNodeOf(): Iterator
     {
-        $treeNodeEntity = $this->buildTree();
+        $treeNodeEntity = self::buildTree();
 
         yield [$treeNodeEntity[0][0], $treeNodeEntity[0], true];
         yield [$treeNodeEntity[0][0][0], $treeNodeEntity[0][0], true];
@@ -163,7 +162,7 @@ final class TreeNodeTest extends AbstractBehaviorTestCase
     public function testToArray(): void
     {
         $expected = $this->provideToArray();
-        $treeNodeEntity = $this->buildTree();
+        $treeNodeEntity = self::buildTree();
 
         $this->assertSame($expected, $treeNodeEntity->toArray());
     }
@@ -171,7 +170,7 @@ final class TreeNodeTest extends AbstractBehaviorTestCase
     public function testToJson(): void
     {
         $expected = $this->provideToArray();
-        $treeNodeEntity = $this->buildTree();
+        $treeNodeEntity = self::buildTree();
         $this->assertSame(Json::encode($expected), $treeNodeEntity->toJson());
     }
 
@@ -185,12 +184,12 @@ final class TreeNodeTest extends AbstractBehaviorTestCase
             3 => '----',
         ];
 
-        $this->assertSame($expected, $this->buildTree()->toFlatArray());
+        $this->assertSame($expected, self::buildTree()->toFlatArray());
     }
 
     public function testArrayAccess(): void
     {
-        $tree = $this->buildTree();
+        $tree = self::buildTree();
 
         $treeNodeEntity45 = new TreeNodeEntity();
         $treeNodeEntity45->setId(45);
@@ -262,7 +261,7 @@ final class TreeNodeTest extends AbstractBehaviorTestCase
 
     public function testChildrenCount(): void
     {
-        $treeNodeEntity = $this->buildTree();
+        $treeNodeEntity = self::buildTree();
 
         $this->assertCount(2, $treeNodeEntity->getChildNodes());
         $this->assertCount(1, $treeNodeEntity->getChildNodes()->get(0)->getChildNodes());
@@ -270,7 +269,7 @@ final class TreeNodeTest extends AbstractBehaviorTestCase
 
     public function testGetPath(): void
     {
-        $treeNodeEntity = $this->buildTree();
+        $treeNodeEntity = self::buildTree();
 
         $this->assertSame('/1', $treeNodeEntity->getRealMaterializedPath());
         $this->assertSame('/1/2', $treeNodeEntity->getChildNodes()->get(0)->getRealMaterializedPath());
@@ -319,7 +318,7 @@ final class TreeNodeTest extends AbstractBehaviorTestCase
 
     public function testMoveChildren(): void
     {
-        $treeNodeEntity = $this->buildTree();
+        $treeNodeEntity = self::buildTree();
 
         $childChildItem = $treeNodeEntity->getChildNodes()
             ->get(0)
@@ -374,7 +373,7 @@ final class TreeNodeTest extends AbstractBehaviorTestCase
         $this->assertSame($tree[0][0], $entity[0][0]);
     }
 
-    private function buildTree(): TreeNodeEntity
+    private static function buildTree(): TreeNodeEntity
     {
         $item = new TreeNodeEntity();
         $item->setMaterializedPath('');

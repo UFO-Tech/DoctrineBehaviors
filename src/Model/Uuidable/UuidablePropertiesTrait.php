@@ -6,5 +6,5 @@ use Ramsey\Uuid\UuidInterface;
 
 trait UuidablePropertiesTrait
 {
-    protected UuidInterface|string|null $uuid;
+    protected UuidInterface|string|null $uuid = null;
 }

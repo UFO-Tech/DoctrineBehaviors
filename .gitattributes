@@ -11,3 +11,7 @@
 /phpstan.neon           export-ignore
 /phpunit.xml            export-ignore
 /rector.php             export-ignore
+/docker-compose.yaml    export-ignore
+/docker                 export-ignore
+/Makefile               export-ignore
+/.env.dist              export-ignore

@@ -1,0 +1,58 @@
+services:
+
+  php:
+    container_name: php_${PROJECT_NAME:-doctrine-behaviors}
+    build:
+      context: ./docker
+    working_dir: ${WORKDIR:-/srv/src/app}
+    environment:
+      WORKDIR: ${WORKDIR:-/srv/src/app}
+      PHP_IDE_CONFIG: serverName=docker
+      HISTFILE: ${WORKDIR:-/srv/src/app}/var/.bash_history
+      # тести за замовчуванням ідуть на sqlite in-memory
+      DB_ENGINE: ${DB_ENGINE:-pdo_sqlite}
+      DB_HOST: ${DB_HOST:-localhost}
+      DB_NAME: ${DB_NAME:-orm_behaviors_test}
+      DB_USER: ${DB_USER:-root}
+      DB_PASSWD: ${DB_PASSWD:-}
+      DB_MEMORY: ${DB_MEMORY:-true}
+    volumes:
+      - ./:${WORKDIR:-/srv/src/app}
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: false
+      postgres:
+        condition: service_healthy
+        required: false
+
+  mysql:
+    image: mysql:8
+    container_name: mysql_${PROJECT_NAME:-doctrine-behaviors}
+    profiles: [ mysql, all ]
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWD:-rootpass}
+      MYSQL_DATABASE: ${DB_NAME:-orm_behaviors_test}
+    ports:
+      - ${MYSQL_PORT:-33071}:3306
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "127.0.0.1" ]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  postgres:
+    image: postgres:17-alpine
+    container_name: postgres_${PROJECT_NAME:-doctrine-behaviors}
+    profiles: [ postgres, all ]
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWD:-rootpass}
+      POSTGRES_USER: ${DB_USER:-root}
+      POSTGRES_DB: ${DB_NAME:-orm_behaviors_test}
+    ports:
+      - ${POSTGRES_PORT:-54371}:5432
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${DB_USER:-root} -d ${DB_NAME:-orm_behaviors_test}" ]
+      interval: 5s
+      timeout: 5s
+      retries: 20

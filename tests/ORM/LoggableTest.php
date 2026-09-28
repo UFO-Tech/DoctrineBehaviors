@@ -4,7 +4,7 @@ namespace Ufo\DoctrineBehaviors\Tests\ORM;
 
 use Ufo\DoctrineBehaviors\Tests\AbstractBehaviorTestCase;
 use Ufo\DoctrineBehaviors\Tests\Fixtures\Entity\LoggableEntity;
-use Psr\Log\Test\TestLogger;
+use ColinODell\PsrTestLogger\TestLogger;
 
 final class LoggableTest extends AbstractBehaviorTestCase
 {

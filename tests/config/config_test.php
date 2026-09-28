@@ -4,11 +4,13 @@ use Ufo\DoctrineBehaviors\Contract\Provider\LocaleProviderInterface;
 use Ufo\DoctrineBehaviors\Contract\Provider\UserProviderInterface;
 use Ufo\DoctrineBehaviors\EventSubscriber\LoggableEventSubscriber;
 use Ufo\DoctrineBehaviors\Tests\DatabaseLoader;
+use Ufo\DoctrineBehaviors\Tests\Logging\SqlCollector;
+use Ufo\DoctrineBehaviors\Tests\Logging\SqlCollectorMiddleware;
 use Ufo\DoctrineBehaviors\Tests\Provider\TestLocaleProvider;
 use Ufo\DoctrineBehaviors\Tests\Provider\TestUserProvider;
-use Psr\Log\Test\TestLogger;
+use ColinODell\PsrTestLogger\TestLogger;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use Symfony\Component\Security\Core\Security;
+use Symfony\Bundle\SecurityBundle\Security;
 use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
@@ -20,6 +22,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $parameters->set('env(DB_USER)', 'root');
     $parameters->set('env(DB_PASSWD)', '');
     $parameters->set('env(DB_MEMORY)', 'true');
+    $parameters->set('env(DB_SERVER_VERSION)', '');
     $parameters->set('kernel.secret', 'for_framework_bundle');
     $parameters->set('locale', 'en');
 
@@ -43,6 +46,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     $services->set(DatabaseLoader::class);
 
+    $services->set(SqlCollector::class);
+    $services->set(SqlCollectorMiddleware::class);
+
     $services->set(LoggableEventSubscriber::class)
         ->arg('$logger', service(TestLogger::class));
 
@@ -54,6 +60,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
             'password' => '%env(DB_PASSWD)%',
             'driver' => '%env(DB_ENGINE)%',
             'memory' => '%env(bool:DB_MEMORY)%',
+            'server_version' => '%env(DB_SERVER_VERSION)%',
         ],
         'orm' => [
             'auto_mapping' => true,

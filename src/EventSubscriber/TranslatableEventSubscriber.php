@@ -23,6 +23,28 @@ final class TranslatableEventSubscriber
      */
     public const LOCALE = 'locale';
 
+    /**
+     * @var int
+     */
+    private const MAX_IDENTIFIER_LENGTH = 63;
+
+    /**
+     * @var string
+     */
+    private const UNIQUE_TRANSLATION_SUFFIX = '_unique_translation';
+
+    /**
+     * @var int
+     */
+    private const HASHED_TABLE_NAME_LENGTH = 32;
+
+    /**
+     * Ідентифікатор без лапок не може починатися з цифри.
+     *
+     * @var string
+     */
+    private const HASHED_TABLE_NAME_PREFIX = 't_';
+
     private int $translatableFetchMode;
 
     private int $translationFetchMode;
@@ -144,7 +166,7 @@ final class TranslatableEventSubscriber
             ]);
         }
 
-        $name = $ClassMetadata->getTableName() . '_unique_translation';
+        $name = $this->buildUniqueTranslationConstraintName($ClassMetadata->getTableName());
         if (!$this->hasUniqueTranslationConstraint($ClassMetadata, $name) &&
             $ClassMetadata->getName() === $ClassMetadata->rootEntityName) {
             $ClassMetadata->table['uniqueConstraints'][$name] = [
@@ -182,5 +204,17 @@ final class TranslatableEventSubscriber
     private function hasUniqueTranslationConstraint(ClassMetadata $ClassMetadata, string $name): bool
     {
         return isset($ClassMetadata->table['uniqueConstraints'][$name]);
+    }
+
+    private function buildUniqueTranslationConstraintName(string $tableName): string
+    {
+        $name = $tableName . self::UNIQUE_TRANSLATION_SUFFIX;
+        if (strlen($name) <= self::MAX_IDENTIFIER_LENGTH) {
+            return $name;
+        }
+
+        $hash = substr(hash('sha256', $tableName), 0, self::HASHED_TABLE_NAME_LENGTH);
+
+        return self::HASHED_TABLE_NAME_PREFIX . $hash . self::UNIQUE_TRANSLATION_SUFFIX;
     }
 }

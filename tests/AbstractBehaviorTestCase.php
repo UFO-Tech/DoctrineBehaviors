@@ -3,10 +3,10 @@
 namespace Ufo\DoctrineBehaviors\Tests;
 
 use Doctrine\DBAL\Connection;
-use Doctrine\DBAL\Logging\DebugStack;
 use Doctrine\DBAL\Platforms\PostgreSQL94Platform;
 use Doctrine\ORM\EntityManagerInterface;
 use Ufo\DoctrineBehaviors\Tests\HttpKernel\DoctrineBehaviorsKernel;
+use Ufo\DoctrineBehaviors\Tests\Logging\SqlCollector;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -53,15 +53,12 @@ abstract class AbstractBehaviorTestCase extends TestCase
         return [];
     }
 
-    protected function createAndRegisterDebugStack(): DebugStack
+    protected function createAndRegisterDebugStack(): SqlCollector
     {
-        $debugStack = new DebugStack();
+        $sqlCollector = $this->getService(SqlCollector::class);
+        $sqlCollector->enable();
 
-        $this->entityManager->getConnection()
-            ->getConfiguration()
-            ->setSQLLogger($debugStack);
-
-        return $debugStack;
+        return $sqlCollector;
     }
 
     /**

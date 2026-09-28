@@ -2,19 +2,15 @@
 
 namespace Ufo\DoctrineBehaviors\Tests;
 
-use Doctrine\DBAL\Connection;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Tools\SchemaTool;
 
 final class DatabaseLoader
 {
     public function __construct(
-        private EntityManagerInterface $entityManager,
-        Connection $connection
+        private EntityManagerInterface $entityManager
     ) {
-        // @see https://stackoverflow.com/a/35222045/1348344
-        $configuration = $connection->getConfiguration();
-        $configuration->setSQLLogger();
+        // DBAL 4 removed Configuration::setSQLLogger(); no SQL logger is registered by default.
     }
 
     public function reload(): void

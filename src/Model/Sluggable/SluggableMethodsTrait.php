@@ -22,7 +22,7 @@ trait SluggableMethodsTrait
      */
     public function generateSlug(): void
     {
-        if ($this->slug !== null && $this->shouldRegenerateSlugOnUpdate() === false) {
+        if ($this->slug !== '' && $this->shouldRegenerateSlugOnUpdate() === false) {
             return;
         }
 

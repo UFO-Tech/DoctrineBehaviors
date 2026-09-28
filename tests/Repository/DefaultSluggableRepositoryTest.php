@@ -2,7 +2,7 @@
 
 namespace Ufo\DoctrineBehaviors\Tests\Repository;
 
-use Doctrine\ORM\AbstractQuery;
+use Doctrine\ORM\Query;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Mapping\ClassMetadata;
 use Doctrine\ORM\QueryBuilder;
@@ -61,24 +61,34 @@ final class DefaultSluggableRepositoryTest extends TestCase
             ->with($entityClass, 'e')
             ->willReturnSelf();
 
+        $andWhereArgs = [];
         $queryBuilder->expects(self::exactly(2))
             ->method('andWhere')
-            ->withConsecutive(['e.slug = :slug'], ['e.id.id != :id_id'])
-            ->willReturnSelf();
+            ->willReturnCallback(function (string $predicate) use (&$andWhereArgs, $queryBuilder) {
+                $andWhereArgs[] = $predicate;
 
+                return $queryBuilder;
+            });
+
+        $setParameterArgs = [];
         $queryBuilder->expects(self::exactly(2))
             ->method('setParameter')
-            ->withConsecutive(['slug', $uniqueSlug], ['id_id', '123'])
-            ->willReturnSelf();
+            ->willReturnCallback(function (string $key, mixed $value) use (&$setParameterArgs, $queryBuilder) {
+                $setParameterArgs[] = [$key, $value];
+
+                return $queryBuilder;
+            });
 
         $queryBuilder->expects(self::once())
             ->method('getQuery')
-            ->willReturn($query = $this->createMock(AbstractQuery::class));
+            ->willReturn($query = $this->createMock(Query::class));
 
         $query->expects(self::once())
             ->method('getSingleScalarResult')
             ->willReturn(1);
 
         self::assertFalse($this->defaultSluggableRepository->isSlugUniqueFor($sluggable, $uniqueSlug));
+        self::assertSame(['e.slug = :slug', 'e.id.id != :id_id'], $andWhereArgs);
+        self::assertSame([['slug', $uniqueSlug], ['id_id', '123']], $setParameterArgs);
     }
 }
